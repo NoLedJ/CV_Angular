@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nom": "Angular",
+    "pourcentage": 90
+  },
+  {
+    "id": 2,
+    "nom": "Java",
+    "pourcentage": 80
+  },
+  {
+    "id": 3,
+    "nom": "SQL",
+    "pourcentage": 85
+  },
+  {
+    "id": 4,
+    "nom": "HTML5",
+    "pourcentage": 92
+  },
+  {
+    "id": 5,
+    "nom": "CSS3",
+    "pourcentage": 94
+  },
+  {
+    "id": 6,
+    "nom": "JavaScript",
+    "pourcentage": 85
+  }
+]

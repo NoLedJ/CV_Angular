@@ -1,0 +1,49 @@
+.main {
+  background: var(--primary-color);
+  padding: 30px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.colonne1, .colonne2 {
+  width: 45%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ligne {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.periode {
+  text-align: right;
+  width: 110px;
+}
+
+.competences-techniques {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.comp-tech {
+  width: 26%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .colonne1, .colonne2 {
+    width: 100%;
+  }
+}

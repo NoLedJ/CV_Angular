@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "nom": "Développelment front-end",
+    "pourcentage": 90
+  },
+  {
+    "id": 2,
+    "nom": "Développement back-end",
+    "pourcentage": 85
+  },
+  {
+    "id": 3,
+    "nom": "DevOps",
+    "pourcentage": 65
+  },
+  {
+    "id": 4,
+    "nom": "Méthodologie Agile",
+    "pourcentage": 90
+  }
+]

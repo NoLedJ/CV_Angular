@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Novecentosanswide-DemiBold";
+  src:
+    url("/fonts/Novecentosanswide-DemiBold.otf")
+}
+
+@font-face {
+  font-family: "Garet-Book";
+  src:
+    url("/fonts/Garet-Book.otf")
+}
+
+body {
+  font-family: "Garet-Book";
+  font-size: 12pt;
+  margin: 0;
+
+  --primary-color: #f9fbf1;
+  --secondary-color: #000;
+  --tertiary-color: #b7bf96;
+}
+
+h1 {
+  font-family: "Novecentosanswide-DemiBold";
+}
+
+h2 {
+  font-family: "Garet-Book";
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-family: "Garet-Book";
+    font-weight: 800;
+    font-size: 11pt;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+a:link {
+  color: #42b0f5;
+}
+
+a:visited {
+  color: #d442f5;
+}

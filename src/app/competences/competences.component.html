@@ -1,0 +1,31 @@
+<div class="main">
+  <div class="colonne1">
+    <app-titre-section [titre]="'Compétences générales'"></app-titre-section>
+    <div>
+      <ul>
+        @for (comp of competences_generales; track comp.id) {
+        <li class="ligne"><span>{{ comp.nom }}</span><span>{{ comp.pourcentage }}%</span></li>
+        }
+      </ul>
+    </div>
+    <app-titre-section [titre]="'Formations et certifications'"></app-titre-section>
+    <div>
+      <ul>
+        @for (form of formations_certifications; track form.id) {
+        <li class="ligne"><span>{{ form.nom }}</span><span class="periode">{{ form.periode }}</span></li>
+        }
+      </ul>
+    </div>
+  </div>
+  <div class="colonne2">
+    <app-titre-section [titre]="'Compétences techniques'"></app-titre-section>
+    <div class="competences-techniques">
+      @for (comp of competences_techniques; track comp.id) {
+        <div class="comp-tech">
+          <span>{{ comp.nom }}</span>
+          <app-niveau-pourcentage [pourcentage]="comp.pourcentage"></app-niveau-pourcentage>
+        </div>
+        }
+    </div>
+  </div>
+</div>
