@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nom": "Angular",
-    "pourcentage": 90
+    "pourcentage": 94
   },
   {
     "id": 2,
@@ -17,12 +17,12 @@
   {
     "id": 4,
     "nom": "HTML5",
-    "pourcentage": 92
+    "pourcentage": 95
   },
   {
     "id": 5,
     "nom": "CSS3",
-    "pourcentage": 94
+    "pourcentage": 92
   },
   {
     "id": 6,
