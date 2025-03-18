@@ -1,14 +1,17 @@
 <div class="main-background">
   <div class="main">
-    <img class="photo-profil" src="\photos\photo_profil.jpg" alt="photo de profil"/>
+    <img class="photo-profil" src="\photos\photo_profil.jpg" alt="photo de profil" [style]="openDescription ? 'display: initial;' : ''"/>
     <div class="main-infos">
-      <h1>Boris CLAUDE</h1>
-      <h2>Ingénieur logiciel</h2>
+      <h1 [style]="openDescription ? 'font-size: revert; margin: revert;' : ''">Boris CLAUDE</h1>
+      <h2 [style]="openDescription ? 'font-size: revert; margin: revert;' : ''">Ingénieur logiciel</h2>
     </div>
     <div class="contact">
-      <div><img src="\icons\phone.png" />(+33) 06 81 62 00 77</div>
-      <div><img src="\icons\position.png" />Ravine des Cabris - Saint Pierre - La Réunion</div>
+      <div [style]="openDescription ? 'margin: revert;' : ''"><img src="\icons\phone.png" />(+33) 06 81 62 00 77</div>
+      <div [style]="openDescription ? 'margin: revert;' : ''"><img src="\icons\position.png" />Saint Pierre - La Réunion</div>
     </div>
   </div>
-  <hr/>
+  <hr class="border-intro" [style]="openDescription ? 'background: radial-gradient(circle, var(--tertiary-color) 0%, var(--primary-color) 40%);' : ''"/>
+  <div class="bouton-fenetre" (click)="openDescription = !openDescription">
+    <img [style]="openDescription ? 'transform: rotate(180deg);' : 'transform: rotate(0);'" src="\icons\fleches.png" />
+  </div>
 </div>

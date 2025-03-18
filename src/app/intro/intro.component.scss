@@ -1,5 +1,8 @@
 .main-background {
   background: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main {
@@ -40,9 +43,49 @@
 }
 
 hr {
-  height: 1px;
   width: 100%;
-  background: radial-gradient(circle, rgba(183,191,150,1) 0%, rgba(249,251,241,1) 40%);
   margin: 0;
   border: 0;
+}
+
+.border-intro {
+  height: 1px;
+  background: radial-gradient(circle, var(--tertiary-color) 0%, var(--primary-color) 40%);
+}
+
+.bouton-fenetre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  box-shadow: 3px 8px 8px #9e9e9e;
+  border-radius: 0 0 15px 15px;
+}
+
+@media (max-width: 900px) {
+
+  .photo-profil {
+    display: none;
+  }
+
+  h1 {
+    font-size: 16pt;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 13pt;
+    margin: 0;
+  }
+
+  .contact > div {
+    margin: 0;
+  }
+
+  .border-intro {
+    background: radial-gradient(circle, var(--tertiary-color) 100%, var(--primary-color) 100%);
+  }
+
 }

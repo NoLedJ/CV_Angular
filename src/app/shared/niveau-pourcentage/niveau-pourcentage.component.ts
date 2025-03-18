@@ -4,7 +4,7 @@ import { Component, HostBinding, Input, OnInit } from '@angular/core';
   standalone: true,
   selector: 'app-niveau-pourcentage',
   templateUrl: './niveau-pourcentage.component.html',
-  styleUrls: ['./niveau-pourcentage.component.css']
+  styleUrls: ['./niveau-pourcentage.component.scss']
 })
 export class NiveauPourcentageComponent implements OnInit {
 
