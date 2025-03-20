@@ -1,5 +1,5 @@
 <div>
-  <app-intro></app-intro>
+  <app-intro [@openClose]="openDescription ? 'open' : 'closed'" [(openClose)]="openDescription"></app-intro>
   <app-competences></app-competences>
   <app-experiences></app-experiences>
 </div>
