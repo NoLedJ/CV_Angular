@@ -1,51 +1,101 @@
-:host {
-  width: 100%;
-  position: absolute;
-  top: 89px;
-}
-
 .main {
   background: var(--primary-color);
-  padding: 30px 50px;
+  padding: 0 50px 30px 50px;
+  height: 100%;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.content {
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  height: 70%;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
 
-.colonne1, .colonne2 {
-  width: 45%;
+.colonne {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 31%;
+  height: fit-content;
+  padding: 10px;
+  border: 1px solid #C0C0C0;
+  border-radius: 20px;
+}
+
+h4 {
+  width: 100%;
+  text-align: center;
 }
 
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.ligne {
+.comp-gen {
+  column-count: 2;
+}
+
+.comp-gen_details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.notation {
   display: flex;
   flex-wrap: nowrap;
+}
+
+.notation img {
+  width: 10px;
+  height: 10px;
+}
+
+.formation {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 5px;
 }
 
-.periode {
-  text-align: right;
-  width: 110px;
+.formation_nom {
+  font-weight: bold;
 }
 
-.competences-techniques {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 16px;
+.formation_infos {
+  text-align: right;
+  font-size: 11pt;
+  width: 100%;
 }
 
 .comp-tech {
-  width: 26%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.comp-tech_nom_logo {
+  width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
+}
+
+.comp-tech_nom_logo > span {
+  font-size: 11pt;
+}
+
+.comp-tech_nom_logo > img {
+  width: 30px;
+  margin-top: 5px;
 }
 
 @media (max-width: 900px) {

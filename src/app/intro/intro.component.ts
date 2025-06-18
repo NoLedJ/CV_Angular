@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Input, model, Output } from '@angular/core';
+import { Component, model } from '@angular/core';
+import import_intro_json from '../intro/intro.json';
 import {
   trigger,
   state,
@@ -15,17 +16,17 @@ import {
       state(
         'up',
         style({
-          transform: 'rotate(0)'
+          rotate: '0'
         }),
       ),
       state(
         'down',
         style({
-          transform: 'rotate(-180deg)'
-        }),
+          rotate: '-180deg'
+        })
       ),
       transition('up <=> down', [animate('1s ease-in')])
-    ]),
+    ])
   ],
   templateUrl: './intro.component.html',
   styleUrls: ['./intro.component.scss']
@@ -33,6 +34,7 @@ import {
 export class IntroComponent {
 
   openClose = model<boolean>(false);
+  intro = import_intro_json;
 
   changeOpenClose() {
     this.openClose.update(etatCourant => etatCourant = !etatCourant);

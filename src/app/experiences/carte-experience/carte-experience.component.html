@@ -1,0 +1,31 @@
+<div class="main" (click)="afficherExperience = true">
+  <img alt="photo représentant l'expérience" [src]="experience.photo_url" />
+  <div class="content">
+    <strong class="poste">{{ experience.poste }}</strong>
+    <span>{{ experience.periode }}</span>
+    <span>{{ experience.projet }}</span>
+    <span class="lieu">{{ experience.lieu }}</span>
+  </div>
+</div>
+@if (afficherExperience) {
+  <div @afficherExperience class="modal" (click)="afficherExperience = false">
+    <div class="modal-content">
+      <span class="fermer" (click)="afficherExperience = false">X</span>
+      <img alt="photo représentant l'expérience" [src]="experience.photo_url" />
+      <div class="content">
+        <strong class="poste">{{ experience.poste }}</strong>
+        <span>{{ experience.periode }} |
+          @if (experience.projet == "AIE") {<a href="https://www.capgemini.com/fr-fr/notre-groupe/nous-connaitre/ecosysteme-innovation/applied-innovation-exchange/" target="_blank">{{ experience.projet }}</a>}
+        @else { {{ experience.projet }} }</span>
+        <span class="lieu">{{ experience.lieu }}</span>
+        <span>{{ experience.presentation }}</span>
+        <ul>
+          @for (exp of experience.experience; track $index) {
+            <li>{{ exp }}</li>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+}
+

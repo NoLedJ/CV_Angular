@@ -1,14 +1,17 @@
 <div class="main-background">
   <div class="main">
-    <img class="photo-profil" src="\photos\photo_profil.jpg" alt="photo de profil"/>
+    <div class="photo_resume">
+      <img class="photo-profil" src="\photos\photo_profil.jpg" alt="photo de profil"/>
+      <p>{{ intro.resume }}</p>
+    </div>
     <div class="main-infos-contact">
       <div class="main-infos">
-        <h1>Boris CLAUDE</h1>
-        <h2>Ingénieur logiciel</h2>
+        <h1>{{ intro.nom }}</h1>
+        <h2>{{ intro.titre }}</h2>
       </div>
       <div class="contact">
-        <div><img src="\icons\phone.png" alt="Icône téléphone"/>(+33) 06 81 62 00 77</div>
-        <div><img src="\icons\position.png" alt="Icône position"/>Saint Pierre - La Réunion</div>
+        <div><img src="\icons\phone.png" alt="Icône téléphone"/>{{ intro.tel }}</div>
+        <div><img src="\icons\position.png" alt="Icône position"/>{{ intro.localisation }}</div>
       </div>
     </div>
   </div>

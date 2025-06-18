@@ -1,15 +1,32 @@
 .main {
   background: var(--secondary-color);
   color: var(--primary-color);
-  padding: 30px 50px;
+  padding: 0 50px 30px 50px;
+  height: 100%;
+  margin: 0 20px;
+  border-radius: 20px;
 }
 
 .experiences {
   margin-top: 16px;
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  overflow: overlay;
+  height: 300px;
+  scrollbar-color: var(--primary-color) transparent;
+  scrollbar-width: thin;
 }
 
-.poste, .lieu {
-  margin-bottom: 10px;
+.experiences>app-carte-experience:not(:last-child) {
+  margin-right: 30px;
+}
+
+.fiche-poste {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--primary-color);
+  border-radius: 20px;
+  padding: 20px;
 }

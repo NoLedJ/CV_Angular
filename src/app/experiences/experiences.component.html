@@ -1,18 +1,8 @@
 <div class="main">
-  <app-titre-section [titre]="'Expériences professionnelles'"></app-titre-section>
+  <app-titre-section [titre]="'Expériences professionnelles'" [(flecheVisible)]="openVolet" [(sensFlecheHaut)]="sensFlecheHaut"></app-titre-section>
   <div class="experiences">
     @for (experience of experiences_textes; track experience.id) {
-      <strong class="poste">{{ experience.poste }}</strong>
-      <span>{{ experience.periode }} |
-        @if (experience.projet == "AIE") {<a href="https://www.capgemini.com/fr-fr/notre-groupe/nous-connaitre/ecosysteme-innovation/applied-innovation-exchange/" target="_blank">{{ experience.projet }}</a>}
-      @else { {{ experience.projet }} }</span>
-      <span class="lieu">{{ experience.lieu }}</span>
-      <span>{{ experience.presentation }}</span>
-      <ul>
-        @for (exp of experience.experience; track $index) {
-          <li>{{ exp }}</li>
-        }
-      </ul>
+      <app-carte-experience [experience]="experience"></app-carte-experience>
       }
   </div>
 </div>

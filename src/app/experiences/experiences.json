@@ -3,40 +3,70 @@
     "id": 1,
     "poste": "Tech Lead",
     "periode": "Octobre 2024 - Février 2025",
-    "projet": "AIE",
-    "lieu": "Capgemini Lille",
+    "projet": "Applied Innovation Exchange",
+    "lieu": "Capgemini - Lille",
     "presentation": "Présentation de projets Capgemini innovants (IA, AR, 3D, métaverse, etc.) à l’AIE de Lille",
     "experience": [
       "Gestion technique des démonstrateurs",
       "Partage des éléments techniques des démonstrateurs entre AIE du monde",
       "Création et déploiement des démonstrateurs (Angular 18, Ionic 7, Azure, Figma)",
       "Prise de contact avec les partenaires et travail en équipe avec leurs développeurs (développement / déploiement)"
-    ]
+    ],
+    "photo_url": "\\photos\\experiences\\Capgemini_AIE_SF.jpg",
+    "afficher": false
   },
   {
     "id": 2,
-    "poste": "Lead développeur",
+    "poste": "Développeur web",
     "periode": "Janvier 2021 - Septembre 2024",
     "projet": "Enedis",
-    "lieu": "Capgemini Lille",
-    "presentation": "Projet facilitant l’achat et la vente d’énergie perdue sur le réseau électrique",
-    "experience": [
-      "Développement, maintien et mise à jour de fonctionnalités en full-stack du site principal (Angular 13, Java 8, PostgreSQL)",
+    "lieu": "Capgemini - Lille",
+    "contexte": {
+      "secteur": "Energie",
+      "equipes": "2 lead techs et 10 développeurs à Capgemini Lille, 2 leads techs et 10 développeurs à Capgemini Paris, 1 chef de projet",
+      "objectif": "Permettre l’achat et la vente d’énergie perdue sur le réseau électrique"
+    },
+    "technologies": {
+      "front": "AngularJS, Angular 13",
+      "back": "Java 18, Java 13",
+      "bdd": "PostgreSQL, Oracle SQL, Liquibase",
+      "test": "JUnit, FitNesse, Selenium",
+      "qualite": "SonarQube, SonarLint, TSLint",
+      "environnement": "API REST, microservices, DevOps, CI/CD",
+      "devops": "Kubernetes, Docker, Ansible, Jenkins",
+      "versionning": "Git, GitLab"
+    },
+    "responsabiltes": [
+      "Développement, maintien et mise à jour de fonctionnalités en fullstack du site principal (Angular 13, Java 8, PostgreSQL)",
       "Création et maintien d'un site connexe (Angular 13, Java 17, JPA)",
       "Gestion devOps de l'application via Kubernetes, Ansible et Jenkins",
       "Support niveau 3",
-      "Gestion des versions via Git et GitLab",
+      "Référent technique front-end",
+      "Responsable UI/UX, présentation et explication des attendus au client",
+      "Participation à des revues de code",
+      "Formation Angular des juniors",
+      "Présentation fonctionnalités et nouveautés Angular aux équipes",
       "Migration AngularJS vers Angular 13",
       "Migration Oracle SQL vers PostgreSQL",
       "Migration des scripts de création et de modification de BDD vers Liquibase"
-    ]
+    ],
+    "devops": "Intégration continue, tests unitaires et d'intégration automatisés, tests de bout en bout, tests automatisés, déploiement",
+    "resultat": [
+      "Modernisation de la stack technique",
+      "Amélioration de la performance du site",
+      "Amélioration de l'expérience utilisateur",
+      "Réduction du taux de bugs",
+      "Amélioration de la satisfaction client : meilleure satisfaction client parmi tous les sites web Enedis selon les utilisateurs"
+    ],
+    "photo_url": "\\photos\\experiences\\banniere_enedis.jpg",
+    "afficher": false
   },
   {
     "id": 3,
     "poste": "Développeur web",
     "periode": "Juin 2018 - Janvier 2021",
-    "projet": "SNCF",
-    "lieu": "Capgemini Lille",
+    "projet": "SNCF Fret",
+    "lieu": "Capgemini - Lille",
     "presentation": "Projet facilitant la gestion des wagons de fret",
     "experience": [
       "Maintien d’un projet côté front (Angular 7)",
@@ -44,6 +74,23 @@
       "Création d'un projet web côté back, soutien, référent technique et relecture côté front (Java 8, Angular 8)",
       "Gestion de version via Git",
       "Déploiement de l'application via Jenkins"
-    ]
+    ],
+    "photo_url": "\\photos\\experiences\\sncf-fret.jpg",
+    "afficher": false
+  },
+  {
+    "id": 4,
+    "poste": "Webmaster infographiste",
+    "periode": "Septembre 2014 - Juin 2017",
+    "projet": "koziel.fr",
+    "lieu": "Koziel - Marcq-En-Baroeul",
+    "presentation": "Entretien et promotion du site web de décoration d'intérieur koziel.fr",
+    "experience": [
+      "Responsable de la communication web : E-mailing et référencement web (naturel et campagne Adwords)",
+      "Responsable de la bonne tenue du site : Amélioration, alimentation et maintenance du site koziel.fr (site sous Prestashop)",
+      "PAO : Création des images produits pour le site, création des catalogues papiers, création des slides publicitaires du site, création images presse, création de flyers publicitaires, ..."
+    ],
+    "photo_url": "\\photos\\experiences\\banner-facade-koziel2.jpg",
+    "afficher": false
   }
 ]

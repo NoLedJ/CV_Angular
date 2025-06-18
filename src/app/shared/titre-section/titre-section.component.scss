@@ -1,7 +1,22 @@
 .main {
-  background: var(--tertiary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+}
+
+.titre-transition {
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: letter-spacing 500ms ease-in;
+  &:hover {
+    letter-spacing: 0;
+  }
+}
+
+.titre {
   width: fit-content;
   padding: 2px 16px;
   border-radius: 14px;
-  box-shadow: 0 4px 10px #000;
 }

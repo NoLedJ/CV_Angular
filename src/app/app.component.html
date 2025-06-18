@@ -1,5 +1,20 @@
 <div>
-  <app-intro [@openClose]="openDescription ? 'open' : 'closed'" [(openClose)]="openDescription"></app-intro>
-  <app-competences></app-competences>
-  <app-experiences></app-experiences>
+  <app-intro [@openCloseIntro]="description ? 'open' : 'close'" [(openClose)]="description"></app-intro>
+  <div class="sections">
+    <app-competences
+      [(openVolet)]="competences"
+      [@openCloseVolets]="competences() ? 'openCompetences' : 'closeCompetences'"
+      (click)="openVolets('competences')">
+    </app-competences>
+    <app-experiences
+      [(sensFlecheHaut)] = "sensFlecheExperiencesHaut"
+      [(openVolet)]="experiences"
+      [@openCloseVolets]="experiences() ? 'openExperiences' : 'closeExperiences'"
+      (click)="openVolets('experiences')">
+    </app-experiences>
+    <app-divers
+      [(openVolet)]="divers"
+      (click)="openVolets('divers')">
+    </app-divers>
+  </div>
 </div>
