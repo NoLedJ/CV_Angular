@@ -2,12 +2,12 @@
   "competences_generales": [
     {
       "id": 2,
-      "nom": "Dév. front-end",
+      "nom": "Dév. front Angular",
       "note": 5
     },
     {
       "id": 3,
-      "nom": "Dév. back-end",
+      "nom": "Dév. back Java / SQL",
       "note": 4
     },
     {
@@ -47,7 +47,7 @@
     },
     {
       "id": 12,
-      "nom": "Formations et veille",
+      "nom": "Autoformation et veille",
       "note": 5
     }
   ],

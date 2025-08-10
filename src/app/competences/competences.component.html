@@ -1,44 +1,46 @@
 <div class="main">
   <app-titre-section [titre]="'Informations générales'" [(flecheVisible)]="openVolet" [(sensFlecheHaut)]="sensFlecheHaut"></app-titre-section>
   <div class="content">
-    <div class="colonne">
-      <h4>Compétences générales</h4>
-      <ul class="comp-gen">
-        @for (comp_gen of competences.competences_generales; track comp_gen.id) {
-        <li class="comp-gen_details">
-          <span>{{ comp_gen.nom }}</span>
-          <span class="notation">
-            @for (note of [].constructor(comp_gen.note); track $index) {
-            <img src="\icons\competences\etoile_noir.png" alt="Etoile noire pour notation"/>
-            }
-            @for (note of [].constructor(5 - comp_gen.note); track $index) {
-            <img src="\icons\competences\etoile_gris.png" alt="Etoile grise pour notation"/>
-            }
-          </span>
-        </li>
-        }
-      </ul>
-    </div>
-    <div class="colonne">
-      <h4>Formations et certifications</h4>
-      <ul>
-        @for (form of competences.formations; track form.id) {
-        <li class="formation">
-          <span class="formation_nom">{{ form.nom }}</span>
-          <span class="formation_infos">{{ form.periode }} | {{ form.etablissement }} | {{ form.ville }}</span>
-        </li>
-        }
-      </ul>
-    </div>
-    <div class="colonne">
-      <h4>Compétences techniques</h4>
-      <div class="comp-tech">
-        @for (comp_tech of competences.competences_techniques; track comp_tech.id) {
-        <div class="comp-tech_nom_logo">
-          <span>{{ comp_tech.nom }}</span>
-          <img [src]=comp_tech.logo_url>
+    <div class="colonnes-content">
+      <div class="colonne">
+        <h4>Compétences générales</h4>
+        <ul class="comp-gen">
+          @for (comp_gen of competences.competences_generales; track comp_gen.id) {
+          <li class="comp-gen-details">
+            <span>{{ comp_gen.nom }}</span>
+            <span class="notation">
+              @for (note of [].constructor(comp_gen.note); track $index) {
+              <img src="\icons\competences\etoile_noir.png" alt="Etoile noire pour notation"/>
+              }
+              @for (note of [].constructor(5 - comp_gen.note); track $index) {
+              <img src="\icons\competences\etoile_gris.png" alt="Etoile grise pour notation"/>
+              }
+            </span>
+          </li>
+          }
+        </ul>
+      </div>
+      <div class="colonne">
+        <h4>Formations et certifications</h4>
+        <ul>
+          @for (form of competences.formations; track form.id) {
+          <li class="formation">
+            <span class="formation-nom">{{ form.nom }}</span>
+            <span class="formation-infos">{{ form.periode }} | {{ form.etablissement }} | {{ form.ville }}</span>
+          </li>
+          }
+        </ul>
+      </div>
+      <div class="colonne">
+        <h4>Compétences techniques</h4>
+        <div class="comp-tech">
+          @for (comp_tech of competences.competences_techniques; track comp_tech.id) {
+          <div class="comp-tech-nom-logo">
+            <span>{{ comp_tech.nom }}</span>
+            <img [src]=comp_tech.logo_url>
+          </div>
+          }
         </div>
-        }
       </div>
     </div>
   </div>

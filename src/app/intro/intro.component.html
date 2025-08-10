@@ -1,17 +1,19 @@
 <div class="main-background">
   <div class="main">
-    <div class="photo_resume">
-      <img class="photo-profil" src="\photos\photo_profil.jpg" alt="photo de profil"/>
+    <div class="photo-resume">
+      <img src="\photos\photo_profil.jpg" alt="photo de profil"/>
       <p>{{ intro.resume }}</p>
     </div>
     <div class="main-infos-contact">
-      <div class="main-infos">
+      <img src="\photos\photo_profil.jpg" alt="photo de profil"/>
+      <div>
         <h1>{{ intro.nom }}</h1>
         <h2>{{ intro.titre }}</h2>
+        <div class="localisation">{{ intro.localisation }}</div>
       </div>
       <div class="contact">
-        <div><img src="\icons\phone.png" alt="Icône téléphone"/>{{ intro.tel }}</div>
         <div><img src="\icons\position.png" alt="Icône position"/>{{ intro.localisation }}</div>
+        <div><img src="\icons\phone.png" alt="Icône téléphone"/>{{ intro.disponibilites }}</div>
       </div>
     </div>
   </div>

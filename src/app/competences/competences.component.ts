@@ -12,7 +12,6 @@ import import_competences_json from '../competences/competences.json';
 export class CompetencesComponent {
 
   competences = import_competences_json;
-  //Ajouter Spring et Sonar dans les compétences techniques
 
   openVolet = model<boolean>();
   sensFlecheHaut = model(false);

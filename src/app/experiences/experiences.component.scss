@@ -7,18 +7,29 @@
   border-radius: 20px;
 }
 
-.experiences {
-  margin-top: 16px;
+.experiences-container {
   display: flex;
+  align-items: center;
   width: 100%;
-  justify-content: space-between;
-  overflow: overlay;
-  height: 300px;
-  scrollbar-color: var(--primary-color) transparent;
-  scrollbar-width: thin;
+  height: calc(100vh - 90px - 110px - 180px);
+  padding-right: 10px;
+  margin-top: 10px;
 }
 
-.experiences>app-carte-experience:not(:last-child) {
+.experiences {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.experiences > app-carte-experience {
+  display: flex;
+  width: 100%;
+}
+
+.experiences > app-carte-experience:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -30,3 +41,31 @@
   border-radius: 20px;
   padding: 20px;
 }
+
+@media (max-width: 1023px) {
+  .experiences-container {
+    align-items: baseline;
+    overflow: auto;
+    scrollbar-width: thin;
+  }
+
+  .experiences {
+    flex-direction: column;
+  }
+
+  .experiences > app-carte-experience {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .experiences > app-carte-experience:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    padding: 0 20px 30px 20px;
+  }
+}
+

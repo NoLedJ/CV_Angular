@@ -1,5 +1,6 @@
 import { animate, style, transition, trigger } from '@angular/animations';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, input, OnInit } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   standalone: true,
@@ -15,12 +16,19 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CarteExperienceComponent implements OnInit {
 
-  @Input() experience: any;
+  experience = input<any>();
   afficherExperience = false;
+  videoUrl!: SafeResourceUrl;
+  photo_url = "";
 
-  constructor() { }
+  constructor(private sanitizer: DomSanitizer) {
+  }
 
   ngOnInit() {
+    if (this.experience() && this.experience().contexte) {
+      this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.experience().contexte.video);
+    }
+    this.photo_url = `url(photos\\experiences"${this.experience().photo_url}")`;
   }
 
 }

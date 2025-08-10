@@ -40,7 +40,7 @@ import { Component, Input, model } from '@angular/core';
           'contour',
           style({
             background: "var(--tertiary-color)",
-            boxShadow: '5px 5px 8px var(--shadow-color)',
+            boxShadow: '5px 5px 8px var(--dark-grey)',
             fontSize: '13pt',
             color: "var(--primary-color)"
           }),

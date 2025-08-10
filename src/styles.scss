@@ -16,12 +16,14 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
+  scrollbar-color: var(--tertiary-color) transparent;
 
   --primary-color: #f9fbf1;
   --secondary-color: #000;
   --tertiary-color: #b7bf96;
-  --stop-color: #962734;
-  --shadow-color: #9e9e9e;
+  --alert-color: #d82b2b;
+  --dark-grey: #9e9e9e;
+  --light-grey: #cacaca;
 }
 
 h1 {
@@ -48,6 +50,12 @@ h4 {
   font-size: 13pt;
   text-decoration: underline;
   margin-top: 0;
+  text-align: center;
+}
+
+h5 {
+  font-size: 11pt;
+  text-align: center;
 }
 
 a:link {
@@ -56,4 +64,23 @@ a:link {
 
 a:visited {
   color: #d442f5;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 0.83em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  h3 {
+    font-size: 0.9em;
+  }
+
 }

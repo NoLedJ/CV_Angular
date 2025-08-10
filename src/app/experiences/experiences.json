@@ -2,46 +2,223 @@
   {
     "id": 1,
     "poste": "Tech Lead",
-    "periode": "Octobre 2024 - Février 2025",
-    "projet": "Applied Innovation Exchange",
+    "periode": "Oct. 2024 - Fév. 2025",
+    "projet": "Applied Innovation Exchange (AIE)",
     "lieu": "Capgemini - Lille",
-    "presentation": "Présentation de projets Capgemini innovants (IA, AR, 3D, métaverse, etc.) à l’AIE de Lille",
-    "experience": [
-      "Gestion technique des démonstrateurs",
-      "Partage des éléments techniques des démonstrateurs entre AIE du monde",
-      "Création et déploiement des démonstrateurs (Angular 18, Ionic 7, Azure, Figma)",
-      "Prise de contact avec les partenaires et travail en équipe avec leurs développeurs (développement / déploiement)"
+    "contexte": {
+      "secteur": "Nouvelles technologies, Retail",
+      "video": "https://www.youtube.com/embed/s1YtBzKCI68?si=ETP_iNmO0BsH2btx",
+      "equipes": [
+        {
+          "id": 1,
+          "details": [
+            "1 responsable AIE",
+            "1 tech lead",
+            "1 développeur web front"
+          ]
+        }
+      ],
+      "objectif": "Présentation de projets Capgemini innovants (IA, AR, 3D, métaverse, etc.) dans l'espace AIE de Lille"
+    },
+    "technologies": [
+      {
+        "id": 1,
+        "nom": "Front-end",
+        "details": "Angular 18, Ionic 7",
+        "outils": "Visual Code"
+      },
+      {
+        "id": 2,
+        "nom": "Back-end",
+        "details": "Python",
+        "outils": "Visual Code"
+      },
+      {
+        "id": 3,
+        "nom": "Environnement",
+        "details": "API REST, CI/CD"
+      },
+      {
+        "id": 4,
+        "nom": "Cloud Computing",
+        "details": "Azure, Google Cloud Computing, Amazon Web Services"
+      },
+      {
+        "id": 5,
+        "nom": "Versionning",
+        "details": "Git, GitHub"
+      }
     ],
-    "photo_url": "\\photos\\experiences\\Capgemini_AIE_SF.jpg",
+    "responsabilites": [
+      "Rencontre avec les créateurs de projet et définition de la stack technique pour les démonstrateurs de projet",
+      "Rencontre et échange autour des technologies des partenaires afin de les inclure dans de nouveaux ou  anciens projets",
+      "Gestion technique de l'espace AIE au sein de Capgemini Lille (démonstrateurs et parc informatique)",
+      "Partage des éléments techniques des démonstrateurs entre AIE du monde",
+      "Création et déploiement de certains démonstrateurs côté front (Angular 18, Ionic 7, Azure, Figma)",
+      "Prise de contact et travail en équipe avec les développeurs des partenaires (développement / déploiement)",
+      "Accompagnement, relecture de code et formation front-end des développeurs, y compris ceux des partenaires si nécessaire",
+      "Veille technologique autour des technologies pouvant intégrer des projets AIE"
+    ],
+    "resultat": [
+      "Ajout de nouveaux projets",
+      "Présentation de ces nouveaux projets à différents salons (Viva Tech 2024 à Paris, National Retail Federation 2025 à New York City)",
+      "Vente de projets à différents clients",
+      "Amélioration et ajout de projets dans l'espace AIE de Lille",
+      "Amélioration des échanges technologiques entre AIE",
+      "Amélioration des connaissances front des équipes"
+    ],
+    "methode": [
+      "Intéraction régulière avec le responsable AIE de Lille et les créateurs de projet",
+      "Intéraction régulière avec les différents développeurs",
+      "Intégration continue des nouvelles fonctionnalités dans les différents projets"
+    ],
+    "competences_developpees": [
+      {
+        "id": 1,
+        "nom": "Montée en compétences",
+        "details": [
+          {
+            "id": 1,
+            "nom": "Angular",
+            "explication": "niveau expert"
+          },
+          {
+            "id": 2,
+            "nom": "Ionic",
+            "explication": "niveau intermédiaire"
+          },
+          {
+            "id": 3,
+            "nom": "Python",
+            "explication": "niveau débutant"
+          },
+          {
+            "id": 4,
+            "nom": "Cloud Computing",
+            "explication": "niveau débutant"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "nom": "Soft skills",
+        "details": [
+          {
+            "nom": "Organisation et adaptation",
+            "explication": "nécessaire pour pouvoir jongler entre les différents projets en cours et à venir et la gestion de l'espace AIE"
+          },
+          {
+            "nom": "Leadership",
+            "explication": "permet de pouvoir gérer plusieurs équipes en tant que développeur expert"
+          },
+          {
+            "nom": "Adaptation au nouvelles technologies",
+            "explication": "essentiel lorsque l'on travaille en tant que Tech Lead pour appréhender de nouveaux langages, cette compétence en devient obligatoire dans le secteur des nouvelles technologies"
+          },
+          {
+            "nom": "Curiosité",
+            "explication": "envers les nouvelles technologies et langages afin d'appréhender les projets futurs"
+          },
+          {
+            "nom": "Autonomie",
+            "explication": "Le responsable AIE étant souvent en déplacement et injoignable, le Tech Lead devient l'interlocuteur et le gestionnaire principal de l'espace AIE en son absence"
+          },
+          {
+            "nom": "Bon relationnel",
+            "explication": "Etre le lien entre les différents chef de projet et le responsable AIE et être l'interlocuteur privilégié pour toute question technique"
+          }
+        ]
+      }
+    ],
+    "photo_url": "/photos/experiences/Capgemini_AIE_SF.jpg",
     "afficher": false
   },
   {
     "id": 2,
     "poste": "Développeur web",
-    "periode": "Janvier 2021 - Septembre 2024",
+    "periode": "Jan. 2021 - Sept. 2024",
     "projet": "Enedis",
     "lieu": "Capgemini - Lille",
     "contexte": {
       "secteur": "Energie",
-      "equipes": "2 lead techs et 10 développeurs à Capgemini Lille, 2 leads techs et 10 développeurs à Capgemini Paris, 1 chef de projet",
+      "video": "https://www.youtube.com/embed/cxkyLFCawq8?si=pAap93ZVfbNT-qs3",
+      "equipes": [
+        {
+          "id": 1,
+          "nom": "Capgemini Lille",
+          "details": [
+            "2 lead techs scrum masters",
+            "8 développeurs web fullstack",
+            "2 fonctionnels testeurs"
+          ]
+        },
+        {
+          "id": 2,
+          "nom": "Capgemini Paris",
+          "details": [
+            "1 chef de projet",
+            "2 PO",
+            "2 leads techs scrum masters",
+            "1 architecte",
+            "1 gestionnaire de base de données",
+            "8 développeurs web fullstack",
+            "4 fonctionnels testeurs"
+          ]
+        }
+      ],
       "objectif": "Permettre l’achat et la vente d’énergie perdue sur le réseau électrique"
     },
-    "technologies": {
-      "front": "AngularJS, Angular 13",
-      "back": "Java 18, Java 13",
-      "bdd": "PostgreSQL, Oracle SQL, Liquibase",
-      "test": "JUnit, FitNesse, Selenium",
-      "qualite": "SonarQube, SonarLint, TSLint",
-      "environnement": "API REST, microservices, DevOps, CI/CD",
-      "devops": "Kubernetes, Docker, Ansible, Jenkins",
-      "versionning": "Git, GitLab"
-    },
-    "responsabiltes": [
+    "technologies": [
+      {
+        "id": 1,
+        "nom": "Front-end",
+        "details": "Angular 13, AngularJS",
+        "outils": "Visual Code"
+      },
+      {
+        "id": 2,
+        "nom": "Back-end",
+        "details": "Java 18, Java 13",
+        "outils": "Eclipse"
+      },
+      {
+        "id": 3,
+        "nom": "BDD",
+        "details": "Oracle SQL, PostgreSQL",
+        "outils": "Oracle SQL Developer, pgAdmin, DBeaver, Liquibase"
+      },
+      {
+        "id": 4,
+        "nom": "Tests",
+        "details": "JUnit, FitNesse, Selenium"
+      },
+      {
+        "id": 5,
+        "nom": "Qualité",
+        "details": "SonarQube, SonarLint, TSLint"
+      },
+      {
+        "id": 6,
+        "nom": "Environnement",
+        "details": "API REST, microservices, DevOps, CI/CD"
+      },
+      {
+        "id": 7,
+        "nom": "DevOps",
+        "details": "Kubernetes, Docker, Ansible, Jenkins"
+      },
+      {
+        "id": 8,
+        "nom": "Versionning",
+        "details": "Git, GitLab"
+      }
+    ],
+    "responsabilites": [
       "Développement, maintien et mise à jour de fonctionnalités en fullstack du site principal (Angular 13, Java 8, PostgreSQL)",
       "Création et maintien d'un site connexe (Angular 13, Java 17, JPA)",
       "Gestion devOps de l'application via Kubernetes, Ansible et Jenkins",
       "Support niveau 3",
-      "Référent technique front-end",
+      "Référent technique Angular",
       "Responsable UI/UX, présentation et explication des attendus au client",
       "Participation à des revues de code",
       "Formation Angular des juniors",
@@ -50,47 +227,335 @@
       "Migration Oracle SQL vers PostgreSQL",
       "Migration des scripts de création et de modification de BDD vers Liquibase"
     ],
-    "devops": "Intégration continue, tests unitaires et d'intégration automatisés, tests de bout en bout, tests automatisés, déploiement",
+    "devops": [
+      "Intégration continue",
+      "Tests unitaires et d'intégration",
+      "Tests de bout en bout",
+      "Tests automatisés",
+      "Déploiement"
+    ],
     "resultat": [
       "Modernisation de la stack technique",
       "Amélioration de la performance du site",
       "Amélioration de l'expérience utilisateur",
       "Réduction du taux de bugs",
-      "Amélioration de la satisfaction client : meilleure satisfaction client parmi tous les sites web Enedis selon les utilisateurs"
+      "Amélioration des connaissances front de l'équipe",
+      "Amélioration de la satisfaction client : meilleure satisfaction client parmi l'ensemble des sites web Enedis selon les utilisateurs"
     ],
-    "photo_url": "\\photos\\experiences\\banniere_enedis.jpg",
+    "methode": [
+      "Agile / Scrum : Participation aux meeting plannings, aux daily meetings, aux sprint reviews et aux retro sprints",
+      "Intéraction régulière avec les PO et les scrums masters",
+      "Intéraction avec le client lors de démonstrations de l'application et de présentations d'améliorations possibles"
+    ],
+    "competences_developpees": [
+      {
+        "id": 1,
+        "nom": "Montée en compétences",
+        "details": [
+          {
+            "nom": "Angular",
+            "explication": "niveau expert"
+          },
+          {
+            "nom": "Java",
+            "explication": "niveau avancé"
+          },
+          {
+            "nom": "SQL",
+            "explication": "niveau avancé"
+          },
+          {
+            "nom": "DevOps",
+            "explication": "niveau intermédiaire"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "nom": "Soft skills",
+        "details": [
+          {
+            "nom": "Agilité",
+            "explication": "Pouvoir changer de priorité instantanément lorsque cela est nécessaire"
+          },
+          {
+            "nom": "Capacité d'apprentissage",
+            "explication": "formation sur différents nouveaux langages de programmation ainsi qu'à leur mise à jour, apprentissage des méthodes et outils d'intégration continue"
+          },
+          {
+            "nom": "Fiabilité",
+            "explication": "indispensable pour une livraison des attendus sans bugs en temps et en heure"
+          }
+        ]
+      }
+    ],
+    "photo_url": "/photos/experiences/banniere_enedis.jpg",
     "afficher": false
   },
   {
     "id": 3,
     "poste": "Développeur web",
-    "periode": "Juin 2018 - Janvier 2021",
+    "periode": "Juin 2018 - Jan. 2021",
     "projet": "SNCF Fret",
     "lieu": "Capgemini - Lille",
-    "presentation": "Projet facilitant la gestion des wagons de fret",
-    "experience": [
-      "Maintien d’un projet côté front (Angular 7)",
-      "Création de 2 projets web côté front (Angular 8)",
-      "Création d'un projet web côté back, soutien, référent technique et relecture côté front (Java 8, Angular 8)",
-      "Gestion de version via Git",
-      "Déploiement de l'application via Jenkins"
+    "contexte": {
+      "secteur": "Transport de marchandises",
+      "video": "https://www.youtube.com/embed/F_uWi2jb5U0?si=tGDOUq4_BgofD7MZ",
+      "equipes": [
+        {
+          "id": 1,
+          "nom": "Capgemini Lille",
+          "details": [
+            "1 chef de projet",
+            "5 PO",
+            "40 développeurs web fullstack",
+            "10 fonctionnels testeurs",
+            "1 gestionnaire de base de données",
+            "1 architecte"
+          ]
+        },
+        {
+          "id": 2,
+          "nom": "Capgemini India",
+          "details": [
+            "20 développeurs web fullstack"
+          ]
+        }
+      ],
+      "objectif": "Faciliter la gestion des wagons de fret par les opérateurs de production"
+    },
+    "technologies": [
+      {
+        "id": 1,
+        "nom": "Front-end",
+        "details": "Angular 7, Angular 8",
+        "outils": "Visual Code"
+      },
+      {
+        "id": 2,
+        "nom": "Back-end",
+        "details": "Java 8",
+        "outils": "Eclipse"
+      },
+      {
+        "id": 3,
+        "nom": "BDD",
+        "details": "Oracle SQL",
+        "outils": "Oracle SQL Developer"
+      },
+      {
+        "id": 4,
+        "nom": "Tests",
+        "details": "JUnit"
+      },
+      {
+        "id": 5,
+        "nom": "Qualité",
+        "details": "SonarLint, TSLint"
+      },
+      {
+        "id": 6,
+        "nom": "Environnement",
+        "details": "API REST, DevOps, CI/CD"
+      },
+      {
+        "id": 7,
+        "nom": "DevOps",
+        "details": "Jenkins"
+      },
+      {
+        "id": 8,
+        "nom": "Versionning",
+        "details": "Git"
+      }
     ],
-    "photo_url": "\\photos\\experiences\\sncf-fret.jpg",
+    "responsabilites": [
+      "Développeur au sein d'une équipe de 10 développeurs parmi 5 équipes",
+      "Maintien du projet web principal, correction de bugs et ajout de nouvelles fonctionnalités côté front (Angular 7)",
+      "Création d'une Progressive Wep App (PWA) pour but d'être utilisé sur ordinateur de bureau ou sur le terrain via une tablette, mise en place d'un Service Worker utilisant IndexedDB et d'un système de notification push (Angular 8)",
+      "Création d'un projet web mobile et ajout de nouvelles fonctionnalités par la suite côté front (Angular 8)",
+      "Formation front Angular des juniors",
+      "Création d'un projet web côté back, soutien, référent technique et relecture côté front (Java 8, Angular 8)",
+      "Déploiement des applications via Jenkins"
+    ],
+    "devops": [
+      "Intégration continue",
+      "Tests unitaires et d'intégration",
+      "Déploiement"
+    ],
+    "resultat": [
+      "Amélioration de la performance du projet principal",
+      "Amélioration de l'expérience utilisateur",
+      "Réduction du taux de bugs",
+      "Amélioration des connaissances Angular de l'équipe"
+    ],
+    "methode": [
+      "Mix Agile / Scrum et cycle en V : Participation aux daily meetings",
+      "Intéraction régulière avec les PO"
+    ],
+    "competences_developpees": [
+      {
+        "id": 1,
+        "nom": "Montée en compétences",
+        "details": [
+          {
+            "nom": "Angular",
+            "explication": "niveau avancé"
+          },
+          {
+            "nom": "Java",
+            "explication": "niveau débutant"
+          },
+          {
+            "nom": "SQL",
+            "explication": "niveau intermédiaire"
+          },
+          {
+            "nom": "DevOps",
+            "explication": "niveau débutant"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "nom": "Soft skills",
+        "details": [
+          {
+            "nom": "Pensée analytique",
+            "explication": "indispensable à la résolution de problèmes de développement complexes"
+          },
+          {
+            "nom": "Esprit d'équipe",
+            "explication": "nécessaire pour pouvoir réfléchir sur les nouvelles fonctionnalités, mettre en commun le travail accompli et pour échanger les informations au sein et entre les équipes"
+          },
+          {
+            "nom": "Ecoute active",
+            "explication": "comprendre les attendus et être pleinement disponible pour son équipe"
+          },
+          {
+            "nom": "Pensée systèmique",
+            "explication": "acquis en intégrant une vision d'ensemble du projet et des intéractions entre les différents éléments techniques et fonctionnelles permettant l'ajout de nouvelles fonctionnalités lors de l'intégration continue"
+          }
+        ]
+      }
+    ],
+    "photo_url": "/photos/experiences/sncf-fret.jpg",
     "afficher": false
   },
   {
     "id": 4,
-    "poste": "Webmaster infographiste",
-    "periode": "Septembre 2014 - Juin 2017",
+    "poste": "Webmaster",
+    "periode": "Sept. 2014 - Juin 2017",
     "projet": "koziel.fr",
     "lieu": "Koziel - Marcq-En-Baroeul",
-    "presentation": "Entretien et promotion du site web de décoration d'intérieur koziel.fr",
-    "experience": [
+    "contexte": {
+      "secteur": "Décoration d'intérieur, Luxe",
+      "video": "https://www.youtube.com/embed/4mM24MqNrLI?si=tfoVuCLdwkKMibMa",
+      "equipes": [
+        {
+          "id": 1,
+          "details": [
+            "1 chef d'entreprise / chef de projet",
+            "1 graphiste",
+            "1 webmaster infographiste",
+            "1 commercial",
+            "1 logisticien",
+            "1 développeur externe"
+          ]
+        }
+      ],
+      "objectif": "Entretien et promotion du site web commercial"
+    },
+    "technologies": [
+      {
+        "id": 1,
+        "nom": "CMS",
+        "details": "Prestashop"
+      },
+      {
+        "id": 2,
+        "nom": "Front-end",
+        "details": "HTML, CSS, JavaScript"
+      },
+      {
+        "id": 3,
+        "nom": "PAO",
+        "details": "Photoshop, InDesign"
+      },
+      {
+        "id": 4,
+        "nom": "Référencement web",
+        "details": "Google Adwords"
+      }
+    ],
+    "responsabilites": [
       "Responsable de la communication web : E-mailing et référencement web (naturel et campagne Adwords)",
       "Responsable de la bonne tenue du site : Amélioration, alimentation et maintenance du site koziel.fr (site sous Prestashop)",
-      "PAO : Création des images produits pour le site, création des catalogues papiers, création des slides publicitaires du site, création images presse, création de flyers publicitaires, ..."
+      "PAO : Création des images produits pour le site, création des catalogues papiers, création des slides publicitaires du site, création images presse, création de flyers publicitaires, ...",
+      "Discussion des nouvelles fonctionnalités avec la société de développement externe",
+      "Aide des clients par téléphone en cas de problème sur le site",
+      "Aide à la vente par téléphone",
+      "SAV par téléphone",
+      "Intéraction au téléphone en français et en anglais (vente à l'international)"
     ],
-    "photo_url": "\\photos\\experiences\\banner-facade-koziel2.jpg",
+    "resultat": [
+      "Amélioration du site",
+      "Augmentation du nombre de visiteurs",
+      "Amélioration chaque année du catalogue"
+    ],
+    "methode": [
+      "Intéraction régulière avec le chef de projet"
+    ],
+    "competences_developpees": [
+      {
+        "id": 1,
+        "nom": "Montée en compétences",
+        "details": [
+          {
+            "nom": "HTML",
+            "explication": "niveau avancé"
+          },
+          {
+            "nom": "CSS",
+            "explication": "niveau avancé"
+          },
+          {
+            "nom": "JavaScript",
+            "explication": "niveau intermédiaire"
+          },
+          {
+            "nom": "PAO",
+            "explication": "niveau avancé"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "nom": "Soft skills",
+        "details": [
+          {
+            "nom": "Polyvalence et adaptabilité",
+            "explication": "Etre capable de toucher à tout sans être forcément un expert"
+          },{
+            "nom": "Capacité à travailler au sein d'une équipe pluridisciplinaire",
+            "explication": "Etre capable d'aider et de discuter des problèmes avec les membres de l'équipe, quelque soit leur corps de métier"
+          },
+          {
+            "nom": "Créativité",
+            "explication": "en tant qu'infographiste, lors de la création d'images, d'e-mailings et de catalogues"
+          },
+          {
+            "nom": "Rigoureux",
+            "explication": "le site web étant le principal portail de vente, l'attractivité et le bon fonctionnement de ce dernier est crucial"
+          },
+          {
+            "nom": "Efficacité de la communication",
+            "explication": "nécessaire pour pouvoir reproduire efficacement les idées du chef de projet et transmettre les avancées du travail à un public non habitués au termes informatiques"
+          }
+        ]
+      }
+    ],
+    "photo_url": "/photos/experiences/banner-facade-koziel2.jpg",
     "afficher": false
   }
 ]

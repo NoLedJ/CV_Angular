@@ -1,3 +1,57 @@
 <div class="main">
     <app-titre-section [titre]="'En savoir plus...'" [(flecheVisible)]="openVolet" [(sensFlecheHaut)]="sensFlecheHaut"></app-titre-section>
-</div>
+    <div class="content">
+      <div>
+        @for (divers_profil of divers.profil; track divers_profil.id) {
+          <h4>{{ divers_profil.nom }}</h4>
+          <p>
+            @if (divers_profil.url) {
+              <a [href]=divers_profil.url>
+              {{ divers_profil.info }}
+              </a>
+            } @else {
+              {{ divers_profil.info }}
+            }
+          </p>
+        }
+      </div>
+      <div>
+        <h4>Me contacter</h4>
+        <form [formGroup]="contactForm" (ngSubmit)="envoyerMessage()">
+          <div>
+            <span>
+              <label for="prenom">Prénom</label>
+              <input [class.champ-alerte]="prenomFormControl.invalid && (prenomFormControl.dirty || prenomFormControl.touched)" id="prenom" type="text" maxlength="100" formControlName="prenom">
+            </span>
+            <span>
+              <label for="nom">Nom</label>
+              <input [class.champ-alerte]="nomFormControl.invalid && (nomFormControl.dirty || nomFormControl.touched)" id="nom" type="text" maxlength="100" formControlName="nom">
+            </span>
+            <span>
+              <label for="mail">E-mail</label>
+              <input [class.champ-alerte]="mailFormControl.invalid && (mailFormControl.dirty || mailFormControl.touched)" id="mail" type="email" maxlength="100" formControlName="mail">
+            </span>
+          </div>
+          <div>
+            <span>
+              <label for="objet">Objet</label>
+              <input [class.champ-alerte]="objetFormControl.invalid && (objetFormControl.dirty || objetFormControl.touched)" id="objet" type="text" maxlength="200" formControlName="objet">
+            </span>
+            <span>
+              <label for="message">Message</label>
+              <textarea [class.champ-alerte]="messageFormControl.invalid && (messageFormControl.dirty || messageFormControl.touched)" id="message" maxlength="2000" formControlName="message"></textarea>
+            </span>
+            <span>
+              <span class="message-error">
+                <span [class.alerte]="validerRequired()">* Tous les champs sont obligatoires</span>
+                @if(mailFormControl.hasError('email') && (mailFormControl.dirty)) {
+                  <span class="alerte">Veuillez entrer une adresse e-mail valide</span>
+                }
+              </span>
+              <button class="bouton-valider" type="submit" [disabled]="!contactForm.valid || loading">{{ texteBouton }}</button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

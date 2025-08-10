@@ -57,7 +57,6 @@ export class ExperiencesComponent {
   afficherExperience(id: number) {
     this.experiences_textes[id - 1].afficher = true;
     this.uneExperienceAfficher = true;
-    console.log(this.experiences_textes)
   }
 
 }

@@ -1,9 +1,11 @@
 :host {
   width: 100%;
+  height: 340px;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 200;
+  overflow: hidden;
 }
 
 .main-background {
@@ -16,53 +18,54 @@
   background: var(--secondary-color);
   color: var(--primary-color);
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   padding: 20px 10px;
-  box-shadow: 5px 5px 8px var(--shadow-color);
+  box-shadow: 5px 5px 8px var(--dark-grey);
 }
 
-.photo_resume {
+.photo-resume {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  height: 180px;
 }
 
-.photo-profil {
-  width: 140px;
+.photo-resume > img {
+  width: 120px;
   height: auto;
   border-radius: 50%;
   border: 5px solid #fff;
-  box-shadow: 5px 5px 8px var(--shadow-color);
-  margin: 0 30px;
+  box-shadow: 5px 5px 8px var(--dark-grey);
+  margin-right: 20px;
 }
 
-.photo_resume > p {
-  width: 45%;
+.photo-resume > p {
+  width: 50%;
   font-size: 10pt;
   font-style: italic;
+  text-align: justify;
 }
 
 .main-infos-contact {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 30px;
   width: 100%;
 }
 
-.main-infos {
-  margin: 0 30px;
+.main-infos-contact > img {
+  display: none;
+}
+
+.localisation {
+  display: none;
 }
 
 .contact {
+  display: flex;
+  flex-direction: column;
   margin: 0 30px;
 
   div {
@@ -90,10 +93,39 @@
   width: 100px;
   height: 30px;
   cursor: pointer;
-  box-shadow: 3px 8px 8px var(--shadow-color);
+  box-shadow: 3px 8px 8px var(--dark-grey);
   border-radius: 0 0 15px 15px;
 }
 
 .bouton-fenetre:hover {
-  box-shadow: 3px 3px 3px var(--shadow-color);
+  box-shadow: 3px 3px 3px var(--dark-grey);
+}
+
+@media (max-width: 767px) {
+  .photo-resume > p {
+    width: auto;
+    margin: 0 30px;
+  }
+
+  .photo-resume > img {
+    display: none;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .main-infos-contact {
+    justify-content: flex-start;
+  }
+
+  .main-infos-contact > img {
+    display: initial;
+    width: 5em;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-right: 20px;
+    margin-left: 50px;
+  }
 }

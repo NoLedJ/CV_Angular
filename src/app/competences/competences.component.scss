@@ -9,9 +9,15 @@
 .content {
   display: flex;
   width: 100%;
-  height: 70%;
+  height: calc(100vh - 90px - 110px - 180px);
   flex-wrap: nowrap;
+  align-items: center;
+}
+
+.colonnes-content {
+  display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .colonne {
@@ -21,13 +27,8 @@
   width: 31%;
   height: fit-content;
   padding: 10px;
-  border: 1px solid #C0C0C0;
+  border: 1px solid var(--tertiary-color);
   border-radius: 20px;
-}
-
-h4 {
-  width: 100%;
-  text-align: center;
 }
 
 ul {
@@ -40,10 +41,11 @@ ul {
   column-count: 2;
 }
 
-.comp-gen_details {
+.comp-gen-details {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  break-inside: avoid;
+  flex-wrap: nowrap;
   margin-bottom: 10px;
 }
 
@@ -64,11 +66,11 @@ ul {
   margin-bottom: 5px;
 }
 
-.formation_nom {
+.formation-nom {
   font-weight: bold;
 }
 
-.formation_infos {
+.formation-infos {
   text-align: right;
   font-size: 11pt;
   width: 100%;
@@ -81,25 +83,37 @@ ul {
   flex-wrap: wrap;
 }
 
-.comp-tech_nom_logo {
+.comp-tech-nom-logo {
   width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
+  text-align: center;
 }
 
-.comp-tech_nom_logo > span {
-  font-size: 11pt;
-}
-
-.comp-tech_nom_logo > img {
+.comp-tech-nom-logo > img {
   width: 30px;
   margin-top: 5px;
 }
 
-@media (max-width: 900px) {
-  .colonne1, .colonne2 {
-    width: 100%;
+@media (max-width: 1023px) {
+  .colonnes-content {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    overflow: auto;
+    scrollbar-width: thin;
+  }
+
+  .colonne {
+    width: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    padding: 0 20px 30px 20px;
   }
 }

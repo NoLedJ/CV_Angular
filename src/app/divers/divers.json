@@ -1,44 +1,22 @@
 {
   "presentation": "Etant passionné par la science et l'informatique, j'ai commencé des études de biologie pour ensuite faire des études dans l'informatique après avoir eu ma maîtrise en Envionnement mention Biologie des Ecosystèmes Continentaux et Marins.",
-  "contacts": [
+  "profil": [
     {
       "id": 1,
-      "nom": "téléphone",
-      "contact": "(33) 06 81 62 00 77"
+      "nom": "Mon LinkedIn",
+      "info": "www.linkedin.com/in/boris-claude/",
+      "url": "in/boris-claude/"
     },
-    {
+     {
       "id": 2,
-      "nom": "mail",
-      "contact": "claude.boris@hotmail.fr"
+      "nom": "Mon Github",
+      "info": "github.com/NoLedJ",
+      "url": "github.com/NoLedJ"
     },
-    {
+     {
       "id": 3,
-      "nom": "linkedin",
-      "contact": "www.linkedin.com/in/boris-claude/"
-    }
-  ],
-  "création": [
-    {
-      "id": 1,
-      "nom": "github",
-      "contact": "github.com/NoLedJ"
-    }
-  ],
-  "hobbies": [
-    {
-      "id": 1,
-      "nom": "jeux vidéos",
-      "description": "Comme beaucoup, je suis entrer dans le monde de l'informatique par le jeu vidéo. Aujourd'hui j'apprécie toujours de m'immerger dans ces mondes fantastiques et de découvrir les nouvelles innovations de cet art toujours à la pointe de la technologies. J'apprécie surtout les jeux solo proposant un gameplay exigeant et de l'exploration, en somme des jeux nécéssitant recherche, préparation, adresse et reflexions rapides."
-    },
-    {
-      "id": 2,
-      "nom": "bloc",
-      "description": "J'ai commencé l'escalade de bloc en salle en 2021 à Lille et j'ai continué la pratique dans une nouvelle salle à la Réunion. Le bloc est une discipline que j'apprécie particulièrement pour sa complexité : en tant que grimpeur, le but est de trouver la meilleure solution pour compléter chaque voie que l'on commence. Avant tout il convient d'étudier la voie, repérer le meilleur tracé jusqu'au sommet, de prévoir les mouvements que l'on initiera, de réussir à les executer et dans le cas contraire de s'entraîner pour les réussir. En bien des sens, chaque voie représente un puzzle ou un casse-tête, qui une fois résolu, permettra de donner une nouvelle corde à son arc pour réussir d'autres voies plus difficiles."
-    },
-    {
-      "id": 3,
-      "nom": "culture pop",
-      "description": ""
+      "nom": "A propos de ce CV",
+      "info": "Ce CV en ligne a été créé sous Angular 18 (sans utilisation de librairies tiers) et sous NodeJS afin de permettre l'envoi sécurisé de mails. Vous pouvez retrouver le code dans mon Github."
     }
   ]
 }

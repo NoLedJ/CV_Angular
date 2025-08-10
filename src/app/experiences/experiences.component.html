@@ -1,8 +1,10 @@
 <div class="main">
   <app-titre-section [titre]="'Expériences professionnelles'" [(flecheVisible)]="openVolet" [(sensFlecheHaut)]="sensFlecheHaut"></app-titre-section>
-  <div class="experiences">
-    @for (experience of experiences_textes; track experience.id) {
-      <app-carte-experience [experience]="experience"></app-carte-experience>
+  <div class="experiences-container">
+    <div class="experiences">
+      @for (experience of experiences_textes; track experience.id) {
+        <app-carte-experience [experience]="experience"></app-carte-experience>
       }
+    </div>
   </div>
 </div>
