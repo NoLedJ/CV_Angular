@@ -1,8 +1,9 @@
-import { Component, model } from '@angular/core';
+import { Component, inject, model } from '@angular/core';
 import { TitreSectionComponent } from '../shared/titre-section/titre-section.component';
 import { FormGroup, FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 import import_divers_json from '../divers/divers.json';
 import { DiversService } from './divers.service';
+import { ContactForm, Divers } from './divers.interface';
 
 @Component({
   standalone: true,
@@ -13,13 +14,16 @@ import { DiversService } from './divers.service';
 })
 export class DiversComponent {
 
-  divers = import_divers_json;
+  private diversService = inject(DiversService);
+
+  divers: Divers = import_divers_json;
 
   openVolet = model<boolean>();
   sensFlecheHaut = model(true);
 
   loading = false;
-  texteBouton = "Envoyer";
+  reponse_serveur_mail_erreur = false;
+  reponse_serveur_mail_ok = false;
 
   prenomFormControl = new FormControl<string>('', [Validators.required]);
   nomFormControl = new FormControl<string>('', [Validators.required]);
@@ -27,15 +31,13 @@ export class DiversComponent {
   objetFormControl = new FormControl<string>('', [Validators.required]);
   messageFormControl = new FormControl<string>('', [Validators.required]);
 
-  contactForm = new FormGroup({
+  contactForm = new FormGroup<ContactForm>({
     prenom: this.prenomFormControl,
     nom: this.nomFormControl,
     mail: this.mailFormControl,
     objet: this.objetFormControl,
     message: this.messageFormControl
-  })
-
-  constructor(private diversService: DiversService) {console.log(this.contactForm.validator)}
+  });
 
   validerRequired() {
     if (this.prenomFormControl.hasError('required') && (this.prenomFormControl.dirty || this.prenomFormControl.touched)
@@ -49,18 +51,16 @@ export class DiversComponent {
 
   envoyerMessage() {
     this.loading = true;
-    this.texteBouton = "En cours...";
 
     this.diversService.envoyerMessage(this.contactForm.value).subscribe({
-      next: () => console.log('Envoi mail OK !'),
       error: err => {
         console.log(err);
+        this.reponse_serveur_mail_erreur = true;
         this.loading = false;
-        this.texteBouton = "Envoyer";
       },
       complete: () => {
+        this.reponse_serveur_mail_ok = true;
         this.loading = false;
-        this.texteBouton = "Envoyer";
       }
     });
   }

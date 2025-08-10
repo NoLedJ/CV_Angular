@@ -1,21 +1,41 @@
-<div class="main">
-    <app-titre-section [titre]="'En savoir plus...'" [(flecheVisible)]="openVolet" [(sensFlecheHaut)]="sensFlecheHaut"></app-titre-section>
-    <div class="content">
-      <div>
-        @for (divers_profil of divers.profil; track divers_profil.id) {
-          <h4>{{ divers_profil.nom }}</h4>
-          <p>
-            @if (divers_profil.url) {
-              <a [href]=divers_profil.url>
-              {{ divers_profil.info }}
-              </a>
-            } @else {
-              {{ divers_profil.info }}
-            }
-          </p>
-        }
-      </div>
-      <div>
+<section>
+  <app-titre-section [titre]="'En savoir plus...'" [(flecheVisible)]="openVolet" [(sensFlecheHaut)]="sensFlecheHaut"></app-titre-section>
+  <div class="content">
+    <div>
+      @for (divers_profil of divers.profil; track divers_profil.id) {
+        <h4>{{ divers_profil.nom }}</h4>
+        <p>
+          @if (divers_profil.url) {
+            <a [href]=divers_profil.url>
+            {{ divers_profil.info }}
+            </a>
+          } @else {
+            {{ divers_profil.info }}
+          }
+        </p>
+      }
+    </div>
+    <div>
+      @if (reponse_serveur_mail_erreur) {
+        <div class="confirmation-envoi">
+          <img src="\icons\triste.png" alt="Icône smiley triste"/>
+          <p>Une erreur est survenue...</p>
+          <p>Veuillez ré-essayer plus tard ou me contacter directement sur <a href="https://www.linkedin.com/in/boris-claude/">mon LinkedIn</a></p>
+          <button class="bouton-valider" (click)="reponse_serveur_mail_erreur = false">Retour au formulaire</button>
+        </div>
+      } @else if (reponse_serveur_mail_ok) {
+        <div class="confirmation-envoi">
+          <img src="\icons\ok.png" alt="Icône coche ok"/>
+          <p>Le mail a bien été envoyé !</p>
+          <button class="bouton-valider" (click)="reponse_serveur_mail_ok = false">Retour au formulaire</button>
+        </div>
+      } @else if (loading) {
+        <div class="loader-container">
+          <div class="loader">
+          </div>
+          <p>Envoi en cours...</p>
+        </div>
+      } @else {
         <h4>Me contacter</h4>
         <form [formGroup]="contactForm" (ngSubmit)="envoyerMessage()">
           <div>
@@ -48,10 +68,11 @@
                   <span class="alerte">Veuillez entrer une adresse e-mail valide</span>
                 }
               </span>
-              <button class="bouton-valider" type="submit" [disabled]="!contactForm.valid || loading">{{ texteBouton }}</button>
+              <button class="bouton-valider" type="submit" [disabled]="!contactForm.valid || loading">Envoyer</button>
             </span>
           </div>
         </form>
-      </div>
+      }
     </div>
   </div>
+</section>

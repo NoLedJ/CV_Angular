@@ -1,9 +1,15 @@
-.main {
+:host {
+  z-index: 2;
+}
+
+section {
+  --hauteurMargin: 20px;
+  --hauteurPadding: 30px;
   background: var(--primary-color);
-  height: calc(100vh - 90px - 110px - 180px + 30px + 20px);
-  padding: 0 50px 30px 50px;
+  height: calc(100vh - var(--hauteurIntro) - var(--hauteurCompetences) - var(--hauteurExperiences) + var(--hauteurMargin) + var(--hauteurPadding));
+  padding: 0 50px var(--hauteurPadding) 50px;
   position: relative;
-  margin: 0 20px;
+  margin: 0 var(--hauteurMargin);
   border-radius: 20px 20px 0 0;
   border-top: 1px solid var(--secondary-color);
 }
@@ -42,6 +48,64 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.confirmation-envoi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &img {
+    width: 50px;
+  }
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 7px solid transparent;
+  border-top-color: var(--secondary-color);
+  animation: spin 2s linear infinite;
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 7px solid transparent;
+  }
+  &::before {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-top-color: var(--tertiary-color);
+    animation: spin 3s linear infinite;
+  }
+  &::after {
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    border-top-color: var(--light-grey);
+    animation: spin 1.5s linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
 }
 
 form {
@@ -103,11 +167,10 @@ textarea.champ-alerte {
 
 .bouton-valider {
   margin-top: 5px;
-  width: 90px;
+  padding: 0 20px;
   height: 30px;
   border: 1px solid #86da00d5;
   border-radius: 15px;
-  align-self: flex-end;
   background: #e5ffbd;
   color: #65A600;
   font-weight: bold;
@@ -139,25 +202,22 @@ button:disabled {
   height: 0;
 }
 
-@media (orientation: portrait) {
-
-}
-
 @media (max-width: 1023px) {
-  .main {
-    padding: 0 20px 30px 20px;
-  }
-
   .content {
+    height: calc(100% - 90px);
     flex-direction: column;
     overflow: auto;
     scrollbar-width: thin;
+    margin-bottom: 30px;
+  }
+
+  .content > div {
+    height: auto;
   }
 
   .content > div:nth-child(1) {
     margin: 0;
     padding: 0;
-    height: fit-content;
     flex: none;
   }
 
@@ -180,7 +240,7 @@ button:disabled {
 }
 
 @media (max-width: 767px) {
-  .main {
+  section {
     padding: 0 20px 30px 20px;
   }
 }

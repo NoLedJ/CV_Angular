@@ -1,0 +1,28 @@
+:host {
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 50px);
+  z-index: 200;
+}
+
+.bouton-fenetre {
+  background: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  box-shadow: 3px 6px 8px var(--dark-grey);
+  border-radius: 0 0 15px 15px;
+}
+
+.bouton-fenetre:hover {
+  box-shadow: 4px 4px 5px var(--dark-grey);
+}
+
+@media (max-width: 767px) {
+  :host {
+    top: 110px;
+  }
+}

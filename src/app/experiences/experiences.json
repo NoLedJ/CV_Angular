@@ -104,26 +104,32 @@
         "nom": "Soft skills",
         "details": [
           {
+            "id": 1,
             "nom": "Organisation et adaptation",
             "explication": "nécessaire pour pouvoir jongler entre les différents projets en cours et à venir et la gestion de l'espace AIE"
           },
           {
+            "id": 2,
             "nom": "Leadership",
             "explication": "permet de pouvoir gérer plusieurs équipes en tant que développeur expert"
           },
           {
+            "id": 3,
             "nom": "Adaptation au nouvelles technologies",
             "explication": "essentiel lorsque l'on travaille en tant que Tech Lead pour appréhender de nouveaux langages, cette compétence en devient obligatoire dans le secteur des nouvelles technologies"
           },
           {
+            "id": 4,
             "nom": "Curiosité",
             "explication": "envers les nouvelles technologies et langages afin d'appréhender les projets futurs"
           },
           {
+            "id": 5,
             "nom": "Autonomie",
             "explication": "Le responsable AIE étant souvent en déplacement et injoignable, le Tech Lead devient l'interlocuteur et le gestionnaire principal de l'espace AIE en son absence"
           },
           {
+            "id": 6,
             "nom": "Bon relationnel",
             "explication": "Etre le lien entre les différents chef de projet et le responsable AIE et être l'interlocuteur privilégié pour toute question technique"
           }
@@ -253,18 +259,22 @@
         "nom": "Montée en compétences",
         "details": [
           {
+            "id": 1,
             "nom": "Angular",
             "explication": "niveau expert"
           },
           {
+            "id": 2,
             "nom": "Java",
             "explication": "niveau avancé"
           },
           {
+            "id": 3,
             "nom": "SQL",
             "explication": "niveau avancé"
           },
           {
+            "id": 4,
             "nom": "DevOps",
             "explication": "niveau intermédiaire"
           }
@@ -275,14 +285,17 @@
         "nom": "Soft skills",
         "details": [
           {
+            "id": 1,
             "nom": "Agilité",
             "explication": "Pouvoir changer de priorité instantanément lorsque cela est nécessaire"
           },
           {
+            "id": 2,
             "nom": "Capacité d'apprentissage",
             "explication": "formation sur différents nouveaux langages de programmation ainsi qu'à leur mise à jour, apprentissage des méthodes et outils d'intégration continue"
           },
           {
+            "id": 3,
             "nom": "Fiabilité",
             "explication": "indispensable pour une livraison des attendus sans bugs en temps et en heure"
           }
@@ -399,18 +412,22 @@
         "nom": "Montée en compétences",
         "details": [
           {
+            "id": 1,
             "nom": "Angular",
             "explication": "niveau avancé"
           },
           {
+            "id": 2,
             "nom": "Java",
             "explication": "niveau débutant"
           },
           {
+            "id": 3,
             "nom": "SQL",
             "explication": "niveau intermédiaire"
           },
           {
+            "id": 4,
             "nom": "DevOps",
             "explication": "niveau débutant"
           }
@@ -421,18 +438,22 @@
         "nom": "Soft skills",
         "details": [
           {
+            "id": 1,
             "nom": "Pensée analytique",
             "explication": "indispensable à la résolution de problèmes de développement complexes"
           },
           {
+            "id": 2,
             "nom": "Esprit d'équipe",
             "explication": "nécessaire pour pouvoir réfléchir sur les nouvelles fonctionnalités, mettre en commun le travail accompli et pour échanger les informations au sein et entre les équipes"
           },
           {
+            "id": 3,
             "nom": "Ecoute active",
             "explication": "comprendre les attendus et être pleinement disponible pour son équipe"
           },
           {
+            "id": 4,
             "nom": "Pensée systèmique",
             "explication": "acquis en intégrant une vision d'ensemble du projet et des intéractions entre les différents éléments techniques et fonctionnelles permettant l'ajout de nouvelles fonctionnalités lors de l'intégration continue"
           }
@@ -512,18 +533,22 @@
         "nom": "Montée en compétences",
         "details": [
           {
+            "id": 1,
             "nom": "HTML",
             "explication": "niveau avancé"
           },
           {
+            "id": 2,
             "nom": "CSS",
             "explication": "niveau avancé"
           },
           {
+            "id": 3,
             "nom": "JavaScript",
             "explication": "niveau intermédiaire"
           },
           {
+            "id": 4,
             "nom": "PAO",
             "explication": "niveau avancé"
           }
@@ -534,21 +559,27 @@
         "nom": "Soft skills",
         "details": [
           {
+            "id": 1,
             "nom": "Polyvalence et adaptabilité",
             "explication": "Etre capable de toucher à tout sans être forcément un expert"
-          },{
+          },
+          {
+            "id": 2,
             "nom": "Capacité à travailler au sein d'une équipe pluridisciplinaire",
             "explication": "Etre capable d'aider et de discuter des problèmes avec les membres de l'équipe, quelque soit leur corps de métier"
           },
           {
+            "id": 3,
             "nom": "Créativité",
             "explication": "en tant qu'infographiste, lors de la création d'images, d'e-mailings et de catalogues"
           },
           {
+            "id": 4,
             "nom": "Rigoureux",
             "explication": "le site web étant le principal portail de vente, l'attractivité et le bon fonctionnement de ce dernier est crucial"
           },
           {
+            "id": 5,
             "nom": "Efficacité de la communication",
             "explication": "nécessaire pour pouvoir reproduire efficacement les idées du chef de projet et transmettre les avancées du travail à un public non habitués au termes informatiques"
           }

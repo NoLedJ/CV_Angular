@@ -1,4 +1,4 @@
-.main {
+section {
   background: var(--primary-color);
   padding: 0 50px 30px 50px;
   height: 100%;
@@ -9,7 +9,7 @@
 .content {
   display: flex;
   width: 100%;
-  height: calc(100vh - 90px - 110px - 180px);
+  height: calc(100vh - var(--hauteurIntro) - var(--hauteurCompetences) - var(--hauteurExperiences));
   flex-wrap: nowrap;
   align-items: center;
 }
@@ -88,7 +88,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -113,7 +113,7 @@ ul {
 }
 
 @media (max-width: 767px) {
-  .main {
+  section {
     padding: 0 20px 30px 20px;
   }
 }

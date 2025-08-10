@@ -1,11 +1,28 @@
-<app-intro [@openCloseIntro]="description ? 'open' : 'close'" [(openClose)]="description"></app-intro>
-<div class="sections">
+@if (afficherModalExperience()) {
+  <app-modal-experience
+    [(experienceId)]="experienceSelectionnee"
+    [(afficherModalExperience)]="afficherModalExperience">
+  </app-modal-experience>
+}
+<app-intro
+  [@openCloseIntro]="description ? 'open' : 'close'"
+  [@openIntroDebut]>
+</app-intro>
+<app-onglet-intro
+  [(openClose)]="description"
+  [@openCloseOngletIntro]="description ? 'open' : 'close'"
+  [@openOngletIntroDebut]>
+</app-onglet-intro>
+<main>
   <app-competences
     [(openVolet)]="competences"
     [@openCloseVolets]="competences() ? 'openCompetences' : 'closeCompetences'"
+    [@openCompetencesDebut]
     (click)="openVolets('competences')">
   </app-competences>
   <app-experiences
+    [(experienceSelectionnee)]="experienceSelectionnee"
+    [(afficherModalExperience)]="afficherModalExperience"
     [(sensFlecheHaut)] = "sensFlecheExperiencesHaut"
     [(openVolet)]="experiences"
     [@openCloseVolets]="experiences() ? 'openExperiences' : 'closeExperiences'"
@@ -15,4 +32,4 @@
     [(openVolet)]="divers"
     (click)="openVolets('divers')">
   </app-divers>
-</div>
+</main>

@@ -1,4 +1,8 @@
-.main {
+:host {
+  z-index: 1;
+}
+
+section {
   background: var(--secondary-color);
   color: var(--primary-color);
   padding: 0 50px 30px 50px;
@@ -11,7 +15,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  height: calc(100vh - 90px - 110px - 180px);
+  height: calc(100vh - var(--hauteurIntro) - var(--hauteurCompetences) - var(--hauteurExperiences));
   padding-right: 10px;
   margin-top: 10px;
 }
@@ -64,7 +68,7 @@
 }
 
 @media (max-width: 767px) {
-  .main {
+  section {
     padding: 0 20px 30px 20px;
   }
 }

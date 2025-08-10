@@ -1,8 +1,9 @@
+import import_experiences_json from "../experiences/experiences.json";
 import { Component, model } from '@angular/core';
-import import_experiences_json from "../experiences/experiences.json"
 import { TitreSectionComponent } from '../shared/titre-section/titre-section.component';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { CarteExperienceComponent } from './carte-experience/carte-experience.component';
+import { Experience } from './experience.interface';
 
 @Component({
   standalone: true,
@@ -47,16 +48,16 @@ import { CarteExperienceComponent } from './carte-experience/carte-experience.co
 })
 export class ExperiencesComponent {
 
-  experiences_textes = import_experiences_json;
+  experiences_textes: Array<Experience> = import_experiences_json;
 
   openVolet = model<boolean>();
   sensFlecheHaut = model<boolean>();
-
-  uneExperienceAfficher = false;
+  afficherModalExperience = model<boolean>(false);
+  experienceSelectionnee = model<number>();
 
   afficherExperience(id: number) {
-    this.experiences_textes[id - 1].afficher = true;
-    this.uneExperienceAfficher = true;
+    this.afficherModalExperience.set(true);
+    this.experienceSelectionnee.set(id);
   }
 
 }

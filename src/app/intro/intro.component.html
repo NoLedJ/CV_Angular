@@ -1,4 +1,4 @@
-<div class="main-background">
+<header>
   <div class="main">
     <div class="photo-resume">
       <img src="\photos\photo_profil.jpg" alt="photo de profil"/>
@@ -12,12 +12,9 @@
         <div class="localisation">{{ intro.localisation }}</div>
       </div>
       <div class="contact">
-        <div><img src="\icons\position.png" alt="Icône position"/>{{ intro.localisation }}</div>
-        <div><img src="\icons\phone.png" alt="Icône téléphone"/>{{ intro.disponibilites }}</div>
+        <div><img src="\icons\position.png" alt="Icône position "/>{{ intro.localisation }}</div>
+        <div><img src="\icons\planete.png" alt="Icône monde connecté"/>{{ intro.disponibilites }}</div>
       </div>
     </div>
   </div>
-  <div class="bouton-fenetre" (click)="changeOpenClose()">
-    <img src="\icons\fleches.png" alt="Icône flèche" [@openClose]="openClose() ? 'down' : 'up'"/>
-  </div>
-</div>
+</header>

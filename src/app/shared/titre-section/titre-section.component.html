@@ -1,5 +1,7 @@
 <div class="main" [class.titre-transition]="!flecheVisible()">
-  <div class="titre" [@gererTitre] = "flecheVisible() ? 'contour' : 'sans_contour'">
+  <div
+    class="titre"
+    [@gererTitre] = "flecheVisible() ? 'contour' : 'sans_contour'">
     <h3>{{ titre }}</h3>
   </div>
   <img

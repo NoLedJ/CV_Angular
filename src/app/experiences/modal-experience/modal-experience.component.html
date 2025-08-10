@@ -1,0 +1,100 @@
+<div [@afficherExperience] class="modal">
+  <div class="fleche-container">
+    @if (experienceId() > 1) {
+      <div class="fleche-gauche" (click)="changerExperience(-1)">
+      </div>
+    }
+  </div>
+  <div class="modal-main">
+    <span class="fermer" (click)="afficherModalExperience.set(false)">X</span>
+    <div class="en-tete" [style.background-image]="'url(' + experience.photo_url + ')'">
+      <div class="en-tete-texte-container">
+        <h4 class="poste">{{ experience.poste }}</h4>
+        <div class="intro-container">
+          <div class="intro-box intro-box-gauche">
+            <span class="gras">{{ experience.projet }}</span>
+            <span>{{ experience.periode }}</span>
+            <span class="lieu">{{ experience.lieu }} </span>
+          </div>
+          <div class="intro-box intro-box-droite">
+            <span><span class="gras">Secteur : </span>{{ experience.contexte?.secteur }}</span>
+            <span><span class="gras">Objectif : </span>{{ experience.contexte?.objectif }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-content">
+      <div class="details-content">
+        <div class="modal-intro-box">
+            <div><span class="gras">Secteur : </span>{{ experience.contexte?.secteur }}</div>
+            <div><span class="gras">Objectif : </span>{{ experience.contexte?.objectif }}</div>
+          </div>
+        <h5>Présentation</h5>
+        <div class="video-container">
+          <iframe class="iframe-video" [src]="experience.contexte?.video | safe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <h5>Constitution des équipes</h5>
+        @for (equipe of experience.contexte?.equipes; track equipe.id) {
+          <span class="gras">{{ equipe.nom }}</span>
+          <ul>
+            @for (equipe_details of equipe.details; track $index) {
+            <li>{{ equipe_details }}</li>
+            }
+          </ul>
+        }
+        <h5>Technologies utilisées</h5>
+        <ul>
+          @for (tech of experience.technologies; track tech.id) {
+          <li><span class="gras">{{ tech.nom }} : </span>{{ tech.details }}</li>
+            @if (tech.outils) {
+              <ul>
+                <li>Outils : {{ tech.outils }}</li>
+              </ul>
+            }
+          }
+        </ul>
+        <h5>Responsabilités</h5>
+        <ul>
+          @for (resp of experience.responsabilites; track $index) {
+          <li>{{ resp }}</li>
+          }
+        </ul>
+        @if (experience.devops) {
+          <h5>DevOps</h5>
+          <ul>
+            @for (devops of experience.devops; track $index) {
+            <li>{{ devops }}</li>
+            }
+          </ul>
+        }
+        <h5>Résultats obtenus</h5>
+        <ul>
+          @for (res of experience.resultat; track $index) {
+          <li>{{ res }}</li>
+          }
+        </ul>
+        <h5>Méthode de travail</h5>
+        <ul>
+          @for (methode of experience.methode; track $index) {
+          <li>{{ methode }}</li>
+          }
+        </ul>
+        <h5>Compétences développées</h5>
+        @for (comp_dev of experience.competences_developpees; track comp_dev.id) {
+        <span class="gras">{{ comp_dev.nom }}</span>
+        <ul>
+          @for (comp_dev_details of comp_dev.details; track comp_dev_details.id) {
+            <li><span class="gras">{{ comp_dev_details.nom }} : </span><span>{{ comp_dev_details.explication }}</span></li>
+          }
+        </ul>
+        }
+      </div>
+    </div>
+  </div>
+  <div class="fleche-container">
+    @if (experienceId() < experiences_texte.length) {
+      <div class="fleche-droite" (click)="changerExperience(1)">
+      </div>
+    }
+  </div>
+</div>

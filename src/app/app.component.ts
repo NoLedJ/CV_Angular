@@ -13,17 +13,34 @@ import {
   group
 } from '@angular/animations';
 import { DiversComponent } from './divers/divers.component';
+import { ModalExperienceComponent } from "./experiences/modal-experience/modal-experience.component";
+import { OngletIntroComponent } from "./intro/onglet-intro/onglet-intro.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [IntroComponent, CompetencesComponent, ExperiencesComponent, DiversComponent],
+  imports: [
+    IntroComponent,
+    CompetencesComponent,
+    ExperiencesComponent,
+    DiversComponent,
+    ModalExperienceComponent,
+    OngletIntroComponent
+],
   animations: [
+    trigger('openIntroDebut', [
+      transition(':enter', [
+        style({
+          translate: '0 -300px'
+        }),
+        animate('1.5s ease-out', style({ translate: '0 -180px'}))
+      ])
+    ]),
     trigger('openCloseIntro', [
       state(
         'open',
         style({
-          translate: '0'
+          translate: 0
         }),
       ),
       state(
@@ -34,9 +51,45 @@ import { DiversComponent } from './divers/divers.component';
       ),
       transition('open <=> close', [
         group([
-          query("@openClose", [animateChild()]),
+          query("@openClose", [animateChild()], { optional: true }),
           animate("1s ease-in")
         ])
+      ])
+    ]),
+    trigger('openOngletIntroDebut', [
+      transition(':enter', [
+        style({
+          translate: '0 -120px'
+        }),
+        animate('1.5s ease-out', style({ translate: 0 }))
+      ])
+    ]),
+    trigger('openCloseOngletIntro', [
+      state(
+        'open',
+        style({
+          translate: '0 180px'
+        }),
+      ),
+      state(
+        'close',
+        style({
+          translate: 0
+        })
+      ),
+      transition('open <=> close', [
+        group([
+          query("@openClose", [animateChild()], { optional: true }),
+          animate("1s ease-in")
+        ])
+      ])
+    ]),
+    trigger('openCompetencesDebut', [
+      transition(':enter', [
+        style({
+          translate: '0 calc(100vh - 200px)'
+        }),
+        animate('1.5s ease-in', style({ translate: 0 }))
       ])
     ]),
     trigger('openCloseVolets', [
@@ -88,29 +141,31 @@ import { DiversComponent } from './divers/divers.component';
 export class AppComponent {
 
   description = false;
+  experienceSelectionnee = model<number>(0);
   competences = model(true);
   experiences = model(false);
   divers = model(false);
   sensFlecheExperiencesHaut = model(true);
+  afficherModalExperience = model(false);
 
   openVolets(volet: string) {
     switch (volet) {
       case "competences":
-        this.competences.update(actuel => actuel = true);
-        this.experiences.update(actuel => actuel = false);
-        this.divers.update(actuel => actuel = false);
-        this.sensFlecheExperiencesHaut.update(actuel => actuel = true);
+        this.competences.set(true);
+        this.experiences.set(false);
+        this.divers.set(false);
+        this.sensFlecheExperiencesHaut.set(true);
         break;
       case "experiences":
-        this.competences.update(actuel => actuel = false);
-        this.experiences.update(actuel => actuel = true);
-        this.divers.update(actuel => actuel = false);
+        this.competences.set(false);
+        this.experiences.set(true);
+        this.divers.set(false);
         break;
       case "divers":
-        this.competences.update(actuel => actuel = false);
-        this.experiences.update(actuel => actuel = false);
-        this.divers.update(actuel => actuel = true);
-        this.sensFlecheExperiencesHaut.update(actuel => actuel = false);
+        this.competences.set(false);
+        this.experiences.set(false);
+        this.divers.set(true);
+        this.sensFlecheExperiencesHaut.set(false);
         break;
     }
   }
