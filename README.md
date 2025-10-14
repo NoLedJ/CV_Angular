@@ -2,9 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
 
+## Configuration file for NodeJS server
+
+In order to send emails using the sending form and launch the NodeJS server, create an .env file in server folder and add the environment variables MAIL_SERVICE, MAIL_USER, MAIL_MDP and MAIL_USER_TO respectively for mail service, mail adress and mail password of the mailbox sending the emails and for mail adress of the receiving mailbox. 
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `nodemon server` in server folder for a NodeJS dev server. Navigate to `http://localhost:3000/`. The application will automatically reload if you change any of the NodeJS source files.
+
+Run `npm run start` for an Angular dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the Angular source files.
 
 ## Code scaffolding
 
@@ -13,14 +19,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
 
