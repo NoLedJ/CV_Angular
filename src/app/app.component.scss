@@ -6,3 +6,51 @@ main {
   flex-direction: column;
   background: #C0C0C0;
 }
+
+.mode-paysage-bas {
+  width: 90vw;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+  padding: 20px;
+  &img {
+    width: 50px;
+  }
+}
+
+@media (max-height: 800px) {
+  main {
+    justify-content: center;
+    align-items: center;
+    position: initial;
+    height: 100vh;
+  }
+
+  .mode-paysage-bas {
+    display: flex;
+  }
+
+  app-competences {
+    display: none;
+  }
+
+  app-experiences {
+    display: none;
+  }
+
+  app-divers {
+    display: none;
+  }
+
+  app-intro {
+    display: none;
+  }
+
+  app-onglet-intro {
+    display: none;
+  }
+
+}
