@@ -1,7 +1,6 @@
 import import_experiences_json from "../../experiences/experiences.json";
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, effect, model } from '@angular/core';
-import { SafeResourceUrl } from '@angular/platform-browser';
 import { Experience } from '../experience.interface';
 import { SafeUrlPipe } from './safe-url.pipe';
 
