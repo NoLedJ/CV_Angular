@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 In order to send emails using the sending form and launch the NodeJS server, create an .env file in server folder and add the environment variables MAIL_SERVICE, MAIL_USER, MAIL_MDP and MAIL_USER_TO respectively for mail service, mail adress and mail password of the mailbox sending the emails and for mail adress of the receiving mailbox. 
 
-## Development server
+## Development servers
 
 Run `nodemon server` in server folder for a NodeJS dev server. Navigate to `http://localhost:3000/`. The application will automatically reload if you change any of the NodeJS source files.
 

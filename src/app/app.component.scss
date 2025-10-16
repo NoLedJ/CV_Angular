@@ -10,7 +10,7 @@ main {
 .mode-paysage-bas {
   width: 90vw;
   border-radius: 20px;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@ main {
   }
 }
 
-@media (max-height: 800px) {
+@media (max-height: 700px) and (pointer: coarse) {
   main {
     justify-content: center;
     align-items: center;
