@@ -1,56 +1,27 @@
-main {
+.content {
   width: 100%;
   position: absolute;
   top: 100px;
-  display: flex;
   flex-direction: column;
   background: #C0C0C0;
 }
 
-.mode-paysage-bas {
-  width: 90vw;
-  border-radius: 20px;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: var(--primary-color);
-  padding: 20px;
-  &img {
-    width: 50px;
-  }
+.mode-paysage-haut {
+  display: flex;
 }
 
-@media (max-height: 700px) and (pointer: coarse) {
-  main {
-    justify-content: center;
-    align-items: center;
-    position: initial;
-    height: 100vh;
+.mode-paysage-bas {
+  display: none;
+}
+
+@media (max-height: 500px) and (pointer: coarse) {
+
+  .mode-paysage-haut {
+    display: none;
   }
 
   .mode-paysage-bas {
     display: flex;
-  }
-
-  app-competences {
-    display: none;
-  }
-
-  app-experiences {
-    display: none;
-  }
-
-  app-divers {
-    display: none;
-  }
-
-  app-intro {
-    display: none;
-  }
-
-  app-onglet-intro {
-    display: none;
   }
 
 }

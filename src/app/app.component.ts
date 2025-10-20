@@ -96,7 +96,7 @@ import { OngletIntroComponent } from "./intro/onglet-intro/onglet-intro.componen
       state(
         'openCompetences',
         style({
-          height: 'calc(100vh - 270px)'
+          height: 'calc(100vh - 280px)'
         }),
       ),
       state(

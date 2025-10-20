@@ -14,27 +14,32 @@
   [@openOngletIntroDebut]>
 </app-onglet-intro>
 <main>
-  <app-competences
-    [(openVolet)]="competences"
-    [@openCloseVolets]="competences() ? 'openCompetences' : 'closeCompetences'"
-    [@openCompetencesDebut]
-    (click)="openVolets('competences')">
-  </app-competences>
-  <app-experiences
-    [(experienceSelectionnee)]="experienceSelectionnee"
-    [(afficherModalExperience)]="afficherModalExperience"
-    [(sensFlecheHaut)] = "sensFlecheExperiencesHaut"
-    [(openVolet)]="experiences"
-    [@openCloseVolets]="experiences() ? 'openExperiences' : 'closeExperiences'"
-    (click)="openVolets('experiences')">
-  </app-experiences>
-  <app-divers
-    [(openVolet)]="divers"
-    (click)="openVolets('divers')">
-  </app-divers>
-  <div class="mode-paysage-bas">
-    <img src="\icons\triste.png" alt="Icône smiley triste"/>
-    <p>Cette application n'est, pour l'instant, pas adaptée à une utilisation sur un écran de faible hauteur.</p>
-    <p>Si vous êtes sur un appareil mobile récent en mode paysage, merci de basculer votre écran en mode portrait.</p>
+  <div class="content mode-paysage-haut">
+    <app-competences
+      [(openVolet)]="competences"
+      [@openCloseVolets]="competences() ? 'openCompetences' : 'closeCompetences'"
+      [@openCompetencesDebut]
+      (click)="openVolets('competences')">
+    </app-competences>
+    <app-experiences
+      [(experienceSelectionnee)]="experienceSelectionnee"
+      [(afficherModalExperience)]="afficherModalExperience"
+      [(sensFlecheHaut)] = "sensFlecheExperiencesHaut"
+      [(openVolet)]="experiences"
+      [@openCloseVolets]="experiences() ? 'openExperiences' : 'closeExperiences'"
+      (click)="openVolets('experiences')">
+    </app-experiences>
+    <app-divers
+      [(openVolet)]="divers"
+      (click)="openVolets('divers')">
+    </app-divers>
+  </div>
+  <div class="content mode-paysage-bas">
+    <app-competences></app-competences>
+    <app-experiences
+      [(experienceSelectionnee)]="experienceSelectionnee"
+      [(afficherModalExperience)]="afficherModalExperience">
+    </app-experiences>
+    <app-divers></app-divers>
   </div>
 </main>

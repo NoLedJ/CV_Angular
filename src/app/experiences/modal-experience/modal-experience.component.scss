@@ -2,11 +2,13 @@
   width: 100vw;
   height: 100vh;
   z-index: 1000;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(4px) brightness(60%);
+  top: 0;
+  left: 0;
 }
 
 .fleche-container {
@@ -166,4 +168,16 @@
   .modal-intro-box {
     display: initial;
   }
+}
+
+@media (max-height: 500px) and (pointer: coarse) {
+
+  .modal-main {
+    overflow: auto;
+  }
+
+  .modal-content {
+    overflow: initial;
+  }
+
 }

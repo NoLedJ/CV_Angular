@@ -20,3 +20,9 @@
   padding: 2px 16px;
   border-radius: 14px;
 }
+
+@media (max-height: 500px) and (pointer: coarse) {
+  img {
+    display: none;
+  }
+}

@@ -88,3 +88,9 @@ a:visited {
     font-size: 0.9em;
   }
 }
+
+@media (max-height: 500px) and (pointer: coarse) {
+  body {
+    overflow: auto;
+  }
+}

@@ -8,6 +8,7 @@ section {
   padding: 0 50px 30px 50px;
   height: 100%;
   margin: 0 20px;
+  margin-bottom: 20px;
   border-radius: 20px;
 }
 
@@ -70,6 +71,12 @@ section {
 @media (max-width: 767px) {
   section {
     padding: 0 20px 30px 20px;
+  }
+}
+
+@media (max-height: 500px) and (pointer: coarse) {
+  .experiences-container {
+    height: auto;
   }
 }
 

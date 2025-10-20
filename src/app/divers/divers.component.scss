@@ -3,21 +3,21 @@
 }
 
 section {
-  --hauteurMargin: 20px;
-  --hauteurPadding: 30px;
   background: var(--primary-color);
-  height: calc(100vh - var(--hauteurIntro) - var(--hauteurCompetences) - var(--hauteurExperiences) + var(--hauteurMargin) + var(--hauteurPadding));
-  padding: 0 50px var(--hauteurPadding) 50px;
-  position: relative;
-  margin: 0 var(--hauteurMargin);
-  border-radius: 20px 20px 0 0;
-  border-top: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  padding: 0 50px 30px 50px;
+  height: 100%;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
 }
 
 .content {
   display: flex;
+  align-items: center;
   width: 100%;
-  height: calc(100% - 130px);
+  height: calc(100vh - var(--hauteurIntro) - var(--hauteurCompetences) - var(--hauteurExperiences));
+  padding-right: 10px;
 }
 
 .content > div {
@@ -26,7 +26,6 @@ section {
 
 .content > div > h4 {
   margin: 0;
-  margin-top: 20px;
 }
 
 .content > div > p {
@@ -35,7 +34,6 @@ section {
 
 .content > div:nth-child(1) {
   padding-right: 50px;
-  margin-top: 20px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -140,6 +138,7 @@ form > div > span:has(button) {
 }
 
 form > div > span:has(button) > span {
+  margin-right: 10px;
   font-size: 10pt;
 }
 
@@ -242,5 +241,11 @@ button:disabled {
 @media (max-width: 767px) {
   section {
     padding: 0 20px 30px 20px;
+  }
+}
+
+@media (max-height: 500px) and (pointer: coarse) {
+  section {
+    height: auto;
   }
 }
