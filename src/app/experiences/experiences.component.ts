@@ -55,9 +55,4 @@ export class ExperiencesComponent {
   afficherModalExperience = model<boolean>(false);
   experienceSelectionnee = model<number>();
 
-  afficherExperience(id: number) {
-    this.afficherModalExperience.set(true);
-    this.experienceSelectionnee.set(id);
-  }
-
 }

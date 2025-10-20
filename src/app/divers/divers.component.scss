@@ -10,6 +10,7 @@ section {
   margin: 0 20px;
   margin-bottom: 20px;
   border-radius: 20px;
+  border-top: 1px solid var(--secondary-color);
 }
 
 .content {
@@ -37,7 +38,6 @@ section {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .content > div:nth-child(2) {
@@ -45,7 +45,6 @@ section {
   flex: 2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .confirmation-envoi {
@@ -164,33 +163,6 @@ textarea.champ-alerte {
   border: 1px solid var(--alert-color);
 }
 
-.bouton-valider {
-  margin-top: 5px;
-  padding: 0 20px;
-  height: 30px;
-  border: 1px solid #86da00d5;
-  border-radius: 15px;
-  background: #e5ffbd;
-  color: #65A600;
-  font-weight: bold;
-  box-shadow: inset -1px -1px 8px #86da00d5, 1px 1px 2px #86da00d5;
-  &:hover {
-    box-shadow: none;
-    background: #e5ffbd;
-    cursor: pointer;
-  }
-}
-
-button:disabled {
-  color: var(--dark-grey);
-  background: var(--light-grey);
-  border: 1px solid var(--dark-grey);
-  box-shadow: none;
-  &:hover {
-    background: var(--light-grey);
-  }
-}
-
 .alerte {
   color: var(--alert-color);
 }
@@ -203,7 +175,6 @@ button:disabled {
 
 @media (max-width: 1023px) {
   .content {
-    height: calc(100% - 90px);
     flex-direction: column;
     overflow: auto;
     scrollbar-width: thin;
@@ -242,10 +213,19 @@ button:disabled {
   section {
     padding: 0 20px 30px 20px;
   }
+
+  .content {
+    height: calc(100vh - var(--hauteurIntro) - var(--hauteurCompetences) - var(--hauteurExperiences) - 30px);
+  }
 }
 
 @media (max-height: 500px) and (pointer: coarse) {
   section {
+    height: auto;
+    border-top: none;
+  }
+
+  .content {
     height: auto;
   }
 }

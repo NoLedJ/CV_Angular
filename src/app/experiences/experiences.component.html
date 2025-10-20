@@ -5,7 +5,8 @@
       @for (experience of experiences_textes; track experience.id) {
         <app-carte-experience
           [experience]="experience"
-          (click)="afficherExperience(experience.id)">
+          [(experienceSelectionnee)]="experienceSelectionnee"
+          [(afficherModalExperience)]="afficherModalExperience">
         </app-carte-experience>
       }
     </div>

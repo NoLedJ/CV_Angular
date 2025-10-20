@@ -71,6 +71,34 @@ a:visited {
   color: #d442f5;
 }
 
+.bouton-valider {
+  margin-top: 5px;
+  padding: 0 20px;
+  height: 30px;
+  width: fit-content;
+  border: 1px solid #86da00d5;
+  border-radius: 15px;
+  background: #e5ffbd;
+  color: #65A600;
+  font-weight: bold;
+  box-shadow: inset -1px -1px 8px #86da00d5, 1px 1px 2px #86da00d5;
+  &:hover {
+    box-shadow: none;
+    background: #e5ffbd;
+    cursor: pointer;
+  }
+}
+
+button:disabled {
+  color: var(--dark-grey);
+  background: var(--light-grey);
+  border: 1px solid var(--dark-grey);
+  box-shadow: none;
+  &:hover {
+    background: var(--light-grey);
+  }
+}
+
 @media (max-width: 768px) {
   body {
     font-size: 0.83em;

@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, model } from '@angular/core';
 import { Experience } from '../experience.interface';
 
 @Component({
@@ -10,5 +10,15 @@ import { Experience } from '../experience.interface';
 export class CarteExperienceComponent {
 
   experience = input<Experience>();
+
+  afficherModalExperience = model<boolean>(false);
+  experienceSelectionnee = model<number>();
+
+  afficherExperience(id: number | undefined) {
+    if (id != undefined) {
+      this.afficherModalExperience.set(true);
+      this.experienceSelectionnee.set(id);
+    }
+  }
 
 }
