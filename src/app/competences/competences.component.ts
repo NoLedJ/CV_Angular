@@ -1,4 +1,4 @@
-import { Component, model } from '@angular/core';
+import { Component, ElementRef, model, ViewChild } from '@angular/core';
 import { TitreSectionComponent } from '../shared/titre-section/titre-section.component';
 import import_competences_json from '../competences/competences.json';
 import { Competences } from './competences.interface';
@@ -11,6 +11,8 @@ import { Competences } from './competences.interface';
   styleUrls: ['./competences.component.scss']
 })
 export class CompetencesComponent {
+
+  @ViewChild('content', { static: false }) content?: ElementRef<HTMLElement>;
 
   competences: Competences = import_competences_json;
 

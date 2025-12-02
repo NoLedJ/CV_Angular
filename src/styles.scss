@@ -11,10 +11,12 @@
 }
 
 body {
+  position: fixed;
   background: #C0C0C0;
   font-family: "Garet-Book";
   font-size: 10pt;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   margin: 0;
   overflow: hidden;
   scrollbar-color: var(--tertiary-color) transparent;

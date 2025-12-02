@@ -9,9 +9,9 @@ section {
 .content {
   display: flex;
   width: 100%;
-  height: calc(100vh - var(--hauteurIntro) - var(--hauteurCompetences) - var(--hauteurExperiences));
   flex-wrap: nowrap;
   align-items: center;
+  height: calc(100% - 110px);
 }
 
 .colonnes-content {
@@ -98,6 +98,10 @@ ul {
 }
 
 @media (max-width: 1023px) {
+  .content {
+    overflow: scroll;
+  }
+
   .colonnes-content {
     flex-direction: column;
     height: 100%;

@@ -1,6 +1,6 @@
 <section>
   <app-titre-section [titre]="'Expériences professionnelles'" [(flecheVisible)]="openVolet" [(sensFlecheHaut)]="sensFlecheHaut"></app-titre-section>
-  <div class="experiences-container">
+  <div class="content">
     <div class="experiences">
       @for (experience of experiences_textes; track experience.id) {
         <app-carte-experience

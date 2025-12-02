@@ -1,6 +1,6 @@
 import import_experiences_json from "../../experiences/experiences.json";
 import { animate, style, transition, trigger } from '@angular/animations';
-import { Component, effect, model } from '@angular/core';
+import { Component, effect, ElementRef, model, ViewChild } from '@angular/core';
 import { Experience } from '../experience.interface';
 import { SafeUrlPipe } from './safe-url.pipe';
 
@@ -19,6 +19,8 @@ import { SafeUrlPipe } from './safe-url.pipe';
 })
 export class ModalExperienceComponent {
 
+  @ViewChild('modalContent', { static: false }) modalContent?: ElementRef<HTMLElement>;
+
   experiences_texte = import_experiences_json;
   experienceId = model(1);
   afficherModalExperience = model(false);
@@ -33,6 +35,8 @@ export class ModalExperienceComponent {
 
   changerExperience(x: number) {
     this.experienceId.set(this.experienceId() + x);
+    const el = this.modalContent?.nativeElement;
+    if (el) el.scrollTo({ top: 0, behavior: 'instant' });
   }
 
 }

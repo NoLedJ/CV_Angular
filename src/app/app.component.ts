@@ -87,7 +87,7 @@ import { OngletIntroComponent } from "./intro/onglet-intro/onglet-intro.componen
     trigger('openCompetencesDebut', [
       transition(':enter', [
         style({
-          translate: '0 calc(100vh - 200px)'
+          translate: '0 calc(100% - 200px)'
         }),
         animate('1.5s ease-in', style({ translate: 0 }))
       ])
@@ -96,7 +96,7 @@ import { OngletIntroComponent } from "./intro/onglet-intro/onglet-intro.componen
       state(
         'openCompetences',
         style({
-          height: 'calc(100vh - 280px)'
+          height: 'calc(100% - 280px)'
         }),
       ),
       state(
@@ -108,7 +108,7 @@ import { OngletIntroComponent } from "./intro/onglet-intro/onglet-intro.componen
       state(
         'openExperiences',
         style({
-          height: 'calc(100vh - 290px)'
+          height: 'calc(100% - 290px)'
         }),
       ),
       state(

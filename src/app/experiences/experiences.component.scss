@@ -12,12 +12,12 @@ section {
   border-radius: 20px;
 }
 
-.experiences-container {
+.content {
   display: flex;
-  align-items: center;
   width: 100%;
-  height: calc(100vh - var(--hauteurIntro) - var(--hauteurCompetences) - var(--hauteurExperiences));
   padding-right: 10px;
+  height: calc(100% - 90px);
+  align-items: baseline;
 }
 
 .experiences {
@@ -47,8 +47,7 @@ section {
 }
 
 @media (max-width: 1023px) {
-  .experiences-container {
-    align-items: baseline;
+  .content {
     overflow: auto;
     scrollbar-width: thin;
   }
@@ -74,7 +73,7 @@ section {
 }
 
 @media (max-height: 500px) and (pointer: coarse) {
-  .experiences-container {
+  .content {
     height: auto;
   }
 }

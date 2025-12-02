@@ -15,6 +15,9 @@
   cursor: pointer;
   box-shadow: 3px 6px 8px var(--dark-grey);
   border-radius: 0 0 15px 15px;
+  &:active {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 .bouton-fenetre:hover {

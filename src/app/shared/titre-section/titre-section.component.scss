@@ -4,6 +4,10 @@
   align-items: center;
   width: 100%;
   height: 90px;
+  user-select: none;
+  &:active {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 .titre-transition {
