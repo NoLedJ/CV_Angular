@@ -1,3 +1,4 @@
+import { environment } from './../../environments/environment';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ContactFormValue } from './divers.interface';
@@ -15,6 +16,6 @@ export class DiversService {
         'Content-Type': 'application/json'
       })
     }
-    return this.http.post("http://localhost:3000/email", body, headers);
+    return this.http.post(environment.apiURL, body, headers);
   }
 }
