@@ -121,6 +121,7 @@ button:disabled {
 
 @media (max-height: 500px) and (pointer: coarse) {
   body {
+    position: absolute;
     overflow: auto;
   }
 }
