@@ -1,4 +1,4 @@
-import { Component, inject, model } from '@angular/core';
+import { Component, effect, ElementRef, inject, model, ViewChild } from '@angular/core';
 import { TitreSectionComponent } from '../shared/titre-section/titre-section.component';
 import { FormGroup, FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 import import_divers_json from '../divers/divers.json';
@@ -15,6 +15,7 @@ import { ContactForm, Divers } from './divers.interface';
 export class DiversComponent {
 
   private diversService = inject(DiversService);
+  @ViewChild('content', { static: false }) content?: ElementRef<HTMLElement>;
 
   divers: Divers = import_divers_json;
 
@@ -38,6 +39,15 @@ export class DiversComponent {
     objet: this.objetFormControl,
     message: this.messageFormControl
   });
+
+  constructor() {
+    effect(() => {
+      if (this.openVolet()) {
+        const el = this.content?.nativeElement;
+        if (el) el.scrollTo({ top: 0, behavior: 'instant' });
+      }
+    });
+  }
 
   validerRequired() {
     if (this.prenomFormControl.hasError('required') && (this.prenomFormControl.dirty || this.prenomFormControl.touched)

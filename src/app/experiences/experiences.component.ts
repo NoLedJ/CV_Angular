@@ -1,5 +1,5 @@
 import import_experiences_json from "../experiences/experiences.json";
-import { Component, model } from '@angular/core';
+import { Component, effect, ElementRef, model, ViewChild } from '@angular/core';
 import { TitreSectionComponent } from '../shared/titre-section/titre-section.component';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { CarteExperienceComponent } from './carte-experience/carte-experience.component';
@@ -48,11 +48,22 @@ import { Experience } from './experience.interface';
 })
 export class ExperiencesComponent {
 
+  @ViewChild('content', { static: false }) content?: ElementRef<HTMLElement>;
+
   experiences_textes: Array<Experience> = import_experiences_json;
 
   openVolet = model<boolean>();
   sensFlecheHaut = model<boolean>();
   afficherModalExperience = model<boolean>(false);
   experienceSelectionnee = model<number>();
+
+  constructor() {
+    effect(() => {
+      if (this.openVolet()) {
+        const el = this.content?.nativeElement;
+        if (el) el.scrollTo({ top: 0, behavior: 'instant' });
+      }
+    });
+  }
 
 }

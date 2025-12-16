@@ -1,4 +1,4 @@
-import { Component, ElementRef, model, ViewChild } from '@angular/core';
+import { Component, effect, ElementRef, model, ViewChild } from '@angular/core';
 import { TitreSectionComponent } from '../shared/titre-section/titre-section.component';
 import import_competences_json from '../competences/competences.json';
 import { Competences } from './competences.interface';
@@ -18,5 +18,14 @@ export class CompetencesComponent {
 
   openVolet = model<boolean>();
   sensFlecheHaut = model(false);
+
+  constructor() {
+    effect(() => {
+      if (this.openVolet()) {
+        const el = this.content?.nativeElement;
+        if (el) el.scrollTo({ top: 0, behavior: 'instant' });
+      }
+    });
+  }
 
 }

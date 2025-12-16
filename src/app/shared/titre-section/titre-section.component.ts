@@ -24,7 +24,7 @@ import { Component, Input, model } from '@angular/core';
         state(
           'bas',
           style({
-            rotate: 0
+            rotate: '0deg'
           }),
         ),
         state(

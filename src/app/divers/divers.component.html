@@ -1,6 +1,6 @@
 <section>
   <app-titre-section [titre]="'En savoir plus...'" [(flecheVisible)]="openVolet" [(sensFlecheHaut)]="sensFlecheHaut"></app-titre-section>
-  <div class="content">
+  <div class="content" #content>
     <div>
       @for (divers_profil of divers.profil; track divers_profil.id) {
         <h4>{{ divers_profil.nom }}</h4>
