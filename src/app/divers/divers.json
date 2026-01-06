@@ -14,7 +14,7 @@
     },
      {
       "id": 3,
-      "nom": "A propos de ce CV",
+      "nom": "A propos de ce site",
       "info": "Ce CV en ligne a été créé sous Angular 18 (sans utilisation de librairies tiers) et sous Express (NodeJS) afin de permettre l'envoi sécurisé de mails. Vous pouvez retrouver le code dans mon Github."
     }
   ]

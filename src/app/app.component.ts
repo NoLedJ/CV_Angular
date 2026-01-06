@@ -13,8 +13,9 @@ import {
   group
 } from '@angular/animations';
 import { DiversComponent } from './divers/divers.component';
-import { ModalExperienceComponent } from "./experiences/modal-experience/modal-experience.component";
+import { ModalExperienceComponent } from "./modales/modal-experience/modal-experience.component";
 import { OngletIntroComponent } from "./intro/onglet-intro/onglet-intro.component";
+import { MentionsLegalesComponent } from './modales/mentions-legales/mentions-legales.component';
 
 @Component({
   selector: 'app-root',
@@ -25,9 +26,14 @@ import { OngletIntroComponent } from "./intro/onglet-intro/onglet-intro.componen
     ExperiencesComponent,
     DiversComponent,
     ModalExperienceComponent,
-    OngletIntroComponent
+    OngletIntroComponent,
+    MentionsLegalesComponent
 ],
   animations: [
+    trigger('afficherModal', [
+        transition(':enter', [style({opacity: 0}), animate(('500ms ease-in'), style({opacity: 1}))]),
+        transition(':leave', [animate(('100ms ease-in'), style({opacity: 0}))])
+      ]),
     trigger('openIntroDebut', [
       transition(':enter', [
         style({
@@ -147,6 +153,7 @@ export class AppComponent {
   divers = model(false);
   sensFlecheExperiencesHaut = model(true);
   afficherModalExperience = model(false);
+  afficherMentionsLegales = model(false);
 
   openVolets(volet: string) {
     switch (volet) {

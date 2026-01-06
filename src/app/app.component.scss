@@ -1,3 +1,16 @@
+.modal {
+  width: 100vw;
+  height: 100dvh;
+  z-index: 1000;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px) brightness(60%);
+  top: 0;
+  left: 0;
+}
+
 .content {
   height: 100%;
   width: 100%;

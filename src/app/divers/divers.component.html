@@ -7,10 +7,11 @@
         <p>
           @if (divers_profil.url) {
             <a [href]=divers_profil.url>
-            {{ divers_profil.info }}
+              {{ divers_profil.info }}
             </a>
           } @else {
-            {{ divers_profil.info }}
+            {{ divers_profil.info }}<br />
+            <a href="javascript:void(0);" (click)="afficherMentionsLegales.set(true)">Mentions légales</a>
           }
         </p>
       }

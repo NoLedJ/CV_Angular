@@ -21,6 +21,7 @@ export class DiversComponent {
 
   openVolet = model<boolean>();
   sensFlecheHaut = model(true);
+  afficherMentionsLegales = model(false);
 
   loading = false;
   reponse_serveur_mail_erreur = false;

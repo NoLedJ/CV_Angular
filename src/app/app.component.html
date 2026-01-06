@@ -1,8 +1,17 @@
 @if (afficherModalExperience()) {
-  <app-modal-experience
-    [(experienceId)]="experienceSelectionnee"
-    [(afficherModalExperience)]="afficherModalExperience">
-  </app-modal-experience>
+  <div [@afficherModal] class="modal" (click)="afficherModalExperience.set(false)">
+    <app-modal-experience
+      [(experienceId)]="experienceSelectionnee"
+      [(afficherModalExperience)]="afficherModalExperience">
+    </app-modal-experience>
+  </div>
+}
+@if (afficherMentionsLegales()) {
+  <div [@afficherModal] class="modal" (click)="afficherMentionsLegales.set(false)">
+    <app-mentions-legales
+      [(afficherMentionsLegales)]="afficherMentionsLegales">
+    </app-mentions-legales>
+  </div>
 }
 <app-intro
   [@openCloseIntro]="description ? 'open' : 'close'"
@@ -31,6 +40,7 @@
       (click)="openVolets('experiences')">
     </app-experiences>
     <app-divers
+      [(afficherMentionsLegales)]="afficherMentionsLegales"
       [(openVolet)]="divers"
       (click)="openVolets('divers')">
     </app-divers>

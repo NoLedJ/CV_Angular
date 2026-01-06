@@ -10,6 +10,10 @@
     url("/fonts/Garet-Book.otf")
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   position: fixed;
   background: #C0C0C0;
@@ -70,6 +74,10 @@ a:link {
 }
 
 a:visited {
+  color: #d442f5;
+}
+
+a:active {
   color: #d442f5;
 }
 

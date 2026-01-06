@@ -1,4 +1,6 @@
 .main {
+  display: flex;
+  flex-direction: column;
   background: var(--primary-color);
   color: var(--secondary-color);
   border-radius: 20px;
@@ -19,6 +21,13 @@
   display: flex;
   flex-direction: column;
   margin: 20px;
+  justify-content: space-between;
+  flex: 1 0 0;
+}
+
+.content-infos {
+  display: flex;
+  flex-direction: column;
 }
 
 .poste {

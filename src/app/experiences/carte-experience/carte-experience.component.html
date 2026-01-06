@@ -1,10 +1,12 @@
 <div class="main">
   <img alt="photo représentant l'expérience" [src]="experience()?.photo_url" />
   <div class="content">
-    <h4 class="poste">{{ experience()?.poste }}</h4>
-    <span class="gras">{{ experience()?.projet }}</span>
-    <span>{{ experience()?.periode }}</span>
-    <span class="lieu">{{ experience()?.lieu }}</span>
+    <div class="content-infos">
+      <h4 class="poste">{{ experience()?.poste }}</h4>
+      <span class="gras">{{ experience()?.projet }}</span>
+      <span>{{ experience()?.periode }}</span>
+      <span class="lieu">{{ experience()?.lieu }}</span>
+    </div>
     <button class="bouton-valider" (click)="afficherExperience(experience()?.id)">Voir l'expérience</button>
   </div>
 </div>
