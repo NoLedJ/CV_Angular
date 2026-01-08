@@ -17,23 +17,16 @@ section {
   width: 100%;
   padding-right: 10px;
   height: calc(100% - 90px);
-  align-items: baseline;
-}
-
-.experiences {
-  display: flex;
-  width: 100%;
-  height: auto;
   justify-content: space-between;
   align-items: stretch;
 }
 
-.experiences > app-carte-experience {
+.content > app-carte-experience {
   display: flex;
   width: 100%;
 }
 
-.experiences > app-carte-experience:not(:last-child) {
+.content > app-carte-experience:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -46,22 +39,19 @@ section {
   padding: 20px;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1023px), (orientation: portrait) and (pointer: fine) {
   .content {
     overflow: auto;
     scrollbar-width: thin;
-  }
-
-  .experiences {
     flex-direction: column;
   }
 
-  .experiences > app-carte-experience {
+  .content > app-carte-experience {
     margin: 0;
     margin-bottom: 20px;
   }
 
-  .experiences > app-carte-experience:not(:last-child) {
+  .content > app-carte-experience:not(:last-child) {
     margin-right: 0;
   }
 }

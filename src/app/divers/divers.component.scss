@@ -215,7 +215,7 @@ textarea.champ-alerte {
   }
 }
 
-@media (max-height: 500px) and (pointer: coarse) {
+@media (max-height: 500px) and (pointer: coarse), (orientation: portrait) and (pointer: fine) {
   section {
     height: auto;
     border-top: none;

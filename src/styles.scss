@@ -130,7 +130,7 @@ button:disabled {
   }
 }
 
-@media (max-height: 500px) and (pointer: coarse) {
+@media (max-height: 500px) and (pointer: coarse), (orientation: portrait) and (pointer: fine) {
   body {
     position: absolute;
     overflow: auto;

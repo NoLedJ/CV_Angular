@@ -1,6 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
+  height: fit-content;
   background: var(--primary-color);
   color: var(--secondary-color);
   border-radius: 20px;

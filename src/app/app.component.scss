@@ -28,7 +28,19 @@
   display: none;
 }
 
+.mode-height-500 {
+  display: flex;
+}
+
 @media (max-height: 500px) and (pointer: coarse) {
+
+  .mode-height-500 {
+    display: none;
+  }
+
+}
+
+@media (max-height: 500px) and (pointer: coarse), (orientation: portrait) and (pointer: fine) {
 
   .mode-paysage-haut {
     display: none;

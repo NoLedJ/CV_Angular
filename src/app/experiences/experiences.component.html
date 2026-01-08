@@ -1,14 +1,12 @@
 <section>
   <app-titre-section [titre]="'Expériences professionnelles'" [(flecheVisible)]="openVolet" [(sensFlecheHaut)]="sensFlecheHaut"></app-titre-section>
   <div class="content" #content>
-    <div class="experiences">
-      @for (experience of experiences_textes; track experience.id) {
-        <app-carte-experience
-          [experience]="experience"
-          [(experienceSelectionnee)]="experienceSelectionnee"
-          [(afficherModalExperience)]="afficherModalExperience">
-        </app-carte-experience>
-      }
-    </div>
+    @for (experience of experiences_textes; track experience.id) {
+      <app-carte-experience
+        [experience]="experience"
+        [(experienceSelectionnee)]="experienceSelectionnee"
+        [(afficherModalExperience)]="afficherModalExperience">
+      </app-carte-experience>
+    }
   </div>
 </section>
