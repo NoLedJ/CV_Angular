@@ -91,7 +91,9 @@ ul {
   margin-top: 5px;
 }
 
-@media (max-width: 1023px), (orientation: portrait) and (pointer: fine) {
+@media (max-width: 1023px),
+  (orientation: portrait) and (pointer: fine),
+  (min-width: 1024px) {
   .content {
     width: -webkit-fill-available;
     overflow: auto;

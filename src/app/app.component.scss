@@ -40,7 +40,9 @@
 
 }
 
-@media (max-height: 500px) and (pointer: coarse), (orientation: portrait) and (pointer: fine) {
+@media (max-height: 500px) and (pointer: coarse),
+  (orientation: portrait) and (pointer: fine),
+  (min-width: 1024px) {
 
   .mode-paysage-haut {
     display: none;
