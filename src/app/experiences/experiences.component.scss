@@ -19,15 +19,15 @@ section {
   height: calc(100% - 90px);
   justify-content: space-between;
   align-items: stretch;
+  flex-wrap: wrap;
+  overflow: auto;
+  scrollbar-width: thin;
 }
 
 .content > app-carte-experience {
   display: flex;
-  width: 100%;
-}
-
-.content > app-carte-experience:not(:last-child) {
-  margin-right: 30px;
+  width: 48%;
+  margin-bottom: 20px;
 }
 
 .fiche-poste {
@@ -39,32 +39,25 @@ section {
   padding: 20px;
 }
 
-@media (max-width: 1023px), (orientation: portrait) and (pointer: fine) {
-  .content {
-    overflow: auto;
-    scrollbar-width: thin;
-    flex-direction: column;
-  }
-
-  .content > app-carte-experience {
-    margin: 0;
-    margin-bottom: 20px;
-  }
-
-  .content > app-carte-experience:not(:last-child) {
-    margin-right: 0;
-  }
-}
-
 @media (max-width: 767px) {
   section {
     padding: 0 20px 30px 20px;
+  }
+
+  .content > app-carte-experience {
+    width: 100%;
   }
 }
 
 @media (max-height: 500px) and (pointer: coarse) {
   .content {
     height: auto;
+  }
+}
+
+@media (min-height: 1000px) {
+  .content > app-carte-experience {
+    width: 100%;
   }
 }
 

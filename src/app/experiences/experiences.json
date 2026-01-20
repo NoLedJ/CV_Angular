@@ -51,7 +51,7 @@
     ],
     "responsabilites": [
       "Rencontre avec les créateurs de projet et définition de la stack technique pour les démonstrateurs de projet",
-      "Rencontre et échange autour des technologies des partenaires afin de les inclure dans de nouveaux ou  anciens projets",
+      "Rencontre et échange autour des technologies des partenaires afin de les inclure dans de nouveaux ou anciens projets",
       "Gestion technique de l'espace AIE au sein de Capgemini Lille (démonstrateurs et parc informatique)",
       "Partage des éléments techniques des démonstrateurs entre AIE du monde",
       "Création et déploiement de certains démonstrateurs côté front (Angular 18, Ionic 7, Azure, Figma)",
@@ -68,8 +68,8 @@
       "Amélioration des connaissances front des équipes"
     ],
     "methode": [
-      "Intéraction régulière avec le responsable AIE de Lille et les créateurs de projet",
-      "Intéraction régulière avec les différents développeurs",
+      "Interaction régulière avec le responsable AIE de Lille et les créateurs de projet",
+      "Interaction régulière avec les différents développeurs",
       "Intégration continue des nouvelles fonctionnalités dans les différents projets"
     ],
     "competences_developpees": [
@@ -131,7 +131,7 @@
           {
             "id": 6,
             "nom": "Bon relationnel",
-            "explication": "Etre le lien entre les différents chef de projet et le responsable AIE et être l'interlocuteur privilégié pour toute question technique"
+            "explication": "Être le lien entre les différents chef de projet et le responsable AIE et être l'interlocuteur privilégié pour toute question technique"
           }
         ]
       }
@@ -215,7 +215,7 @@
       },
       {
         "id": 8,
-        "nom": "Versionning",
+        "nom": "Versioning",
         "details": "Git, GitLab"
       }
     ],
@@ -250,8 +250,8 @@
     ],
     "methode": [
       "Agile / Scrum : Participation aux meeting plannings, aux daily meetings, aux sprint reviews et aux retro sprints",
-      "Intéraction régulière avec les PO et les scrums masters",
-      "Intéraction avec le client lors de démonstrations de l'application et de présentations d'améliorations possibles"
+      "Interaction régulière avec les PO et les scrums masters",
+      "Interaction avec le client lors de démonstrations de l'application et de présentations d'améliorations possibles"
     ],
     "competences_developpees": [
       {
@@ -378,7 +378,7 @@
       },
       {
         "id": 8,
-        "nom": "Versionning",
+        "nom": "Versioning",
         "details": "Git"
       }
     ],
@@ -449,13 +449,13 @@
           },
           {
             "id": 3,
-            "nom": "Ecoute active",
+            "nom": "Écoute active",
             "explication": "comprendre les attendus et être pleinement disponible pour son équipe"
           },
           {
             "id": 4,
-            "nom": "Pensée systèmique",
-            "explication": "acquis en intégrant une vision d'ensemble du projet et des intéractions entre les différents éléments techniques et fonctionnelles permettant l'ajout de nouvelles fonctionnalités lors de l'intégration continue"
+            "nom": "Pensée systémique",
+            "explication": "acquis en intégrant une vision d'ensemble du projet et des interactions entre les différents éléments techniques et fonctionnelles permettant l'ajout de nouvelles fonctionnalités lors de l'intégration continue"
           }
         ]
       }
@@ -517,7 +517,7 @@
       "Aide des clients par téléphone en cas de problème sur le site",
       "Aide à la vente par téléphone",
       "SAV par téléphone",
-      "Intéraction au téléphone en français et en anglais (vente à l'international)"
+      "Interaction au téléphone en français et en anglais (vente à l'international)"
     ],
     "resultat": [
       "Amélioration du site",
@@ -525,7 +525,7 @@
       "Amélioration chaque année du catalogue"
     ],
     "methode": [
-      "Intéraction régulière avec le chef de projet"
+      "Interaction régulière avec le chef de projet"
     ],
     "competences_developpees": [
       {
@@ -561,12 +561,12 @@
           {
             "id": 1,
             "nom": "Polyvalence et adaptabilité",
-            "explication": "Etre capable de toucher à tout sans être forcément un expert"
+            "explication": "Être capable de toucher à tout sans être forcément un expert"
           },
           {
             "id": 2,
             "nom": "Capacité à travailler au sein d'une équipe pluridisciplinaire",
-            "explication": "Etre capable d'aider et de discuter des problèmes avec les membres de l'équipe, quelque soit leur corps de métier"
+            "explication": "Être capable d'aider et de discuter des problèmes avec les membres de l'équipe, quelque soit leur corps de métier"
           },
           {
             "id": 3,

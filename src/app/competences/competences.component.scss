@@ -10,8 +10,8 @@ section {
   display: flex;
   width: 100%;
   flex-wrap: nowrap;
-  justify-content: space-between;
   align-items: baseline;
+  justify-content: space-between;
   height: calc(100% - 110px);
 }
 
@@ -91,9 +91,9 @@ ul {
   margin-top: 5px;
 }
 
-@media (max-width: 1023px),
+@media (max-width: 1200px),
   (orientation: portrait) and (pointer: fine),
-  (min-width: 1024px) {
+  (min-width: 1600px) {
   .content {
     width: -webkit-fill-available;
     overflow: auto;
