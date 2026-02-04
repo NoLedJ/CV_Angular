@@ -31,7 +31,6 @@ export class ModalExperienceComponent {
   }
 
   changerExperience(x: number, event: Event) {
-    event.stopPropagation();
     this.experienceId.set(this.experienceId() + x);
     const el = this.modalContent?.nativeElement;
     if (el) el.scrollTo({ top: 0, behavior: 'instant' });

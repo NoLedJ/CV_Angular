@@ -172,7 +172,7 @@
           ]
         }
       ],
-      "objectif": "Permettre l’achat et la vente d’énergie perdue sur le réseau électrique"
+      "objectif": "Projet permettant l'achat et la vente d'énergie pour compenser celle perdue sur le réseau électrique"
     },
     "technologies": [
       {
@@ -522,7 +522,7 @@
     "resultat": [
       "Amélioration du site",
       "Augmentation du nombre de visiteurs",
-      "Amélioration chaque année du catalogue"
+      "Amélioration graphique chaque année du catalogue"
     ],
     "methode": [
       "Interaction régulière avec le chef de projet"
@@ -576,12 +576,12 @@
           {
             "id": 4,
             "nom": "Rigoureux",
-            "explication": "le site web étant le principal portail de vente, l'attractivité et le bon fonctionnement de ce dernier est crucial"
+            "explication": "le site web étant le principal portail de vente, l'attractivité et le bon fonctionnement de ce dernier sont cruciaux"
           },
           {
             "id": 5,
             "nom": "Efficacité de la communication",
-            "explication": "nécessaire pour pouvoir reproduire efficacement les idées du chef de projet et transmettre les avancées du travail à un public non habitués au termes informatiques"
+            "explication": "nécessaire pour pouvoir reproduire efficacement les idées du chef de projet et transmettre les avancées du travail à un public non habitué au termes informatiques"
           }
         ]
       }

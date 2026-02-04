@@ -1,5 +1,5 @@
 @if (afficherModalExperience()) {
-  <div [@afficherModal] class="modal" (click)="afficherModalExperience.set(false)">
+  <div [@afficherModal] class="modal" (click)="fermerModal($event)">
     <app-modal-experience
       [(experienceId)]="experienceSelectionnee"
       [(afficherModalExperience)]="afficherModalExperience">
@@ -7,7 +7,7 @@
   </div>
 }
 @if (afficherMentionsLegales()) {
-  <div [@afficherModal] class="modal" (click)="afficherMentionsLegales.set(false)">
+  <div [@afficherModal] class="modal" (click)="fermerModal($event)">
     <app-mentions-legales
       [(afficherMentionsLegales)]="afficherMentionsLegales">
     </app-mentions-legales>

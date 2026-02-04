@@ -155,6 +155,13 @@ export class AppComponent {
   afficherModalExperience = model(false);
   afficherMentionsLegales = model(false);
 
+  fermerModal(event: MouseEvent) {
+    if (event.target === event.currentTarget) {
+      this.afficherModalExperience.set(false);
+      this.afficherMentionsLegales.set(false)
+    }
+  }
+
   openVolets(volet: string) {
     switch (volet) {
       case "competences":

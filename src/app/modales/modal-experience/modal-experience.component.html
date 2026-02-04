@@ -1,4 +1,4 @@
-<div class="fleche-container">
+<div class="fleche-container" (click)="afficherModalExperience.set(false)">
   @if (experienceId() > 1) {
     <div class="fleche-gauche" (click)="changerExperience(-1, $event)">
     </div>
@@ -90,7 +90,7 @@
     </div>
   </div>
 </div>
-<div class="fleche-container">
+<div class="fleche-container" (click)="afficherModalExperience.set(false)">
   @if (experienceId() < experiences_texte.length) {
     <div class="fleche-droite" (click)="changerExperience(1, $event)">
     </div>
