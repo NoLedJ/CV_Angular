@@ -1,3 +1,4 @@
+import import_experiences_json from "./experiences/experiences.json";
 import { Component, model } from '@angular/core';
 import { IntroComponent } from './intro/intro.component';
 import { CompetencesComponent } from './competences/competences.component';
@@ -16,6 +17,8 @@ import { DiversComponent } from './divers/divers.component';
 import { ModalExperienceComponent } from "./modales/modal-experience/modal-experience.component";
 import { OngletIntroComponent } from "./intro/onglet-intro/onglet-intro.component";
 import { MentionsLegalesComponent } from './modales/mentions-legales/mentions-legales.component';
+import { Experience } from "./experiences/experience.interface";
+import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
 
 @Component({
   selector: 'app-root',
@@ -147,6 +150,9 @@ import { MentionsLegalesComponent } from './modales/mentions-legales/mentions-le
 export class AppComponent {
 
   description = false;
+  experiences_texte = model<Experience[]>(import_experiences_json);
+
+  youtubeVideosArray = model<SafeResourceUrl[]>([]);
   experienceSelectionnee = model<number>(0);
   competences = model(true);
   experiences = model(false);
@@ -154,6 +160,10 @@ export class AppComponent {
   sensFlecheExperiencesHaut = model(true);
   afficherModalExperience = model(false);
   afficherMentionsLegales = model(false);
+
+  constructor(private sanitizer: DomSanitizer) {
+    this.youtubeVideosArray.set(import_experiences_json.map((exp: Experience) => this.sanitizer.bypassSecurityTrustResourceUrl(exp.contexte.video)));
+  }
 
   fermerModal(event: MouseEvent) {
     if (event.target === event.currentTarget) {

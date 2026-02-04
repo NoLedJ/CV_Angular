@@ -30,7 +30,7 @@
         </div>
       <h5>Présentation</h5>
       <div class="video-container">
-        <iframe class="iframe-video" [src]="experience.contexte?.video | safe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="iframe-video" [src]="youtubeVideosArray()[experienceId()-1]" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <h5>Constitution des équipes</h5>
       @for (equipe of experience.contexte?.equipes; track equipe.id) {
@@ -91,7 +91,7 @@
   </div>
 </div>
 <div class="fleche-container" (click)="afficherModalExperience.set(false)">
-  @if (experienceId() < experiences_texte.length) {
+  @if (experienceId() < experiences_texte().length) {
     <div class="fleche-droite" (click)="changerExperience(1, $event)">
     </div>
   }

@@ -141,7 +141,7 @@
   },
   {
     "id": 2,
-    "poste": "Développeur web",
+    "poste": "Développeur Fullstack",
     "periode": "Jan. 2021 - Sept. 2024",
     "projet": "Enedis",
     "lieu": "Capgemini - Lille",
@@ -163,7 +163,7 @@
           "nom": "Capgemini Paris",
           "details": [
             "1 chef de projet",
-            "2 PO",
+            "2 product Owners",
             "2 leads techs scrum masters",
             "1 architecte",
             "1 gestionnaire de base de données",
@@ -307,7 +307,7 @@
   },
   {
     "id": 3,
-    "poste": "Développeur web",
+    "poste": "Développeur Front-end",
     "periode": "Juin 2018 - Jan. 2021",
     "projet": "SNCF Fret",
     "lieu": "Capgemini - Lille",
@@ -320,8 +320,8 @@
           "nom": "Capgemini Lille",
           "details": [
             "1 chef de projet",
-            "5 PO",
-            "40 développeurs web fullstack",
+            "5 product owners",
+            "40 développeurs web",
             "10 fonctionnels testeurs",
             "1 gestionnaire de base de données",
             "1 architecte"

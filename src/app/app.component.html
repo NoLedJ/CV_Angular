@@ -1,6 +1,8 @@
 @if (afficherModalExperience()) {
   <div [@afficherModal] class="modal" (click)="fermerModal($event)">
     <app-modal-experience
+      [(experiences_texte)]="experiences_texte"
+      [(youtubeVideosArray)]="youtubeVideosArray"
       [(experienceId)]="experienceSelectionnee"
       [(afficherModalExperience)]="afficherModalExperience">
     </app-modal-experience>
