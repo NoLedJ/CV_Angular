@@ -1,0 +1,32 @@
+.modal {
+  width: 100vw;
+  height: 100dvh;
+  z-index: 1000;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px) brightness(60%);
+  top: 0;
+  left: 0;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: -180px;
+  left: 0;
+  z-index: 200;
+  overflow: hidden;
+  box-shadow: 3px 5px 8px var(--dark-grey);
+}
+
+.content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 110px;
+  flex-direction: column;
+  background: #C0C0C0;
+}

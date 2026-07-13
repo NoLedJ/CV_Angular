@@ -1,0 +1,12 @@
+<section>
+  <app-titre-section [titre]="'Expériences professionnelles'"></app-titre-section>
+  <div class="content">
+    @for (experience of experiences_textes; track experience.id) {
+      <app-carte-experience
+        [experience]="experience"
+        [(experienceSelectionnee)]="experienceSelectionnee"
+        [(afficherModalExperience)]="afficherModalExperience">
+      </app-carte-experience>
+    }
+  </div>
+</section>

@@ -1,0 +1,30 @@
+{
+  "about": {
+    "titre": "Mon parcours professionnel (en bref)",
+    "contenu": [
+      "J'ai travaillé pendant plus de 6 ans chez Capgemini Lille en tant que développeur fullstack Angular et Java sur de très gros projets, longs, complexes et critiques, notamment pour SNCF Fret et Enedis.",
+      "J'ai par la suite été choisi pour devenir Tech Lead de l'Applied Innovation Exchange de Capgemini Lille où j'ai pu diriger une petite équipe de développeurs et travailler sur des projets innovants et variés, allant de l'IoT à l'IA.",
+      "C'est quelques temps après avoir pris ce nouveau poste qu'une très belle opportunité professionnelle s'est présentée à ma compagne, une opportunité qui nécessitait de déménager pour la magnifique île de la Réunion. Nous avons donc décidé de quitter la métropole et j'ai, de mon côté, quitté Capgemini pour me lancer dans l'aventure entrepreneuriale et créer ma propre société de développement web et mobile.",
+      "Aujourd'hui, je suis à la recherche de nouvelles opportunités professionnelles, que ce soit en tant que salarié ou en tant qu'indépendant, pour continuer à développer mes compétences et relever de nouveaux défis."
+    ]
+  },
+  "profil": [
+    {
+      "id": 1,
+      "nom": "Mon LinkedIn",
+      "info": "www.linkedin.com/in/boris-claude/",
+      "url": "https://www.linkedin.com/in/boris-claude/"
+    },
+     {
+      "id": 2,
+      "nom": "Mon Github",
+      "info": "github.com/NoLedJ",
+      "url": "https://github.com/NoLedJ"
+    },
+     {
+      "id": 3,
+      "nom": "A propos de ce site",
+      "info": "Ce CV en ligne a été créé sous Angular 18 et sous Express (NodeJS) afin de permettre l'envoi sécurisé de mails. Vous pouvez retrouver le code dans mon Github."
+    }
+  ]
+}

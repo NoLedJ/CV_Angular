@@ -1,0 +1,153 @@
+{
+  "competences_generales": [
+    {
+      "id": 2,
+      "nom": "Dév. front Angular",
+      "note": 5
+    },
+    {
+      "id": 3,
+      "nom": "Dév. back Java / SQL",
+      "note": 4
+    },
+    {
+      "id": 4,
+      "nom": "DevOps",
+      "note": 3
+    },
+    {
+      "id": 5,
+      "nom": "UI/UX design",
+      "note": 4
+    },
+    {
+      "id": 6,
+      "nom": "Architecture REST",
+      "note": 5
+    },
+    {
+      "id": 7,
+      "nom": "Clean Code",
+      "note": 5
+    },
+    {
+      "id": 8,
+      "nom": "Méthodologie agile",
+     "note": 5
+    },
+    {
+      "id": 10,
+      "nom": "Code review",
+      "note": 5
+    },
+    {
+      "id": 11,
+      "nom": "Formation des juniors",
+     "note": 5
+    },
+    {
+      "id": 12,
+      "nom": "Autoformation et veille",
+      "note": 5
+    }
+  ],
+  "formations": [
+    {
+      "id": 1,
+      "nom": "Certification agile SAFe 5.0 for Teams",
+      "periode": "2023",
+      "etablissement": "Capgemini",
+      "ville": "Lille"
+    },
+    {
+      "id": 2,
+      "nom": "Formation Développeur .Net",
+      "periode": "2018",
+      "etablissement": "M2I formation",
+      "ville": "Lille"
+    },
+    {
+      "id": 3,
+      "nom": "DEUST Bureautique et Communication Électronique en Entreprise (mention BIEN)",
+      "periode": "2014",
+      "etablissement": "CUEEP",
+      "ville": "Lille"
+    },
+    {
+    "id": 4,
+    "nom": "TOEIC - 850 pts/990 (Niveau B2)",
+    "periode": "2013",
+    "etablissement": "CUEEP",
+    "ville": "Lille"
+    },
+    {
+      "id": 5,
+      "nom": "Maîtrise Biologie des Écosystèmes Continentaux et Marins",
+      "periode": "2009",
+      "etablissement": "Université de Lille",
+      "ville": "Lille"
+    }
+  ],
+  "competences_techniques": [
+    {
+      "id": 1,
+      "nom": "Angular",
+      "logo_url": "\\icons\\competences\\angular.png"
+    },
+    {
+      "id": 2,
+      "nom": "RxJS",
+      "logo_url": "\\icons\\competences\\rxjs.png"
+    },
+    {
+      "id": 3,
+      "nom": "Signal",
+      "logo_url": "\\icons\\competences\\signal.png"
+    },
+    {
+      "id": 4,
+      "nom": "TypeScript",
+      "logo_url": "\\icons\\competences\\typescript.png"
+    },
+    {
+      "id": 5,
+      "nom": "JavaScript",
+      "logo_url": "\\icons\\competences\\javascript.png"
+    },
+    {
+      "id": 6,
+      "nom": "HTML5",
+      "logo_url": "\\icons\\competences\\html5.png"
+    },
+    {
+      "id": 7,
+      "nom": "CSS3",
+      "logo_url": "\\icons\\competences\\css3.png"
+    },
+    {
+      "id": 8,
+      "nom": "Java",
+      "logo_url": "\\icons\\competences\\java.png"
+    },
+    {
+      "id": 9,
+      "nom": "Spring",
+      "logo_url": "\\icons\\competences\\spring.png"
+    },
+    {
+      "id": 10,
+      "nom": "Maven",
+      "logo_url": "\\icons\\competences\\maven.png"
+    },
+    {
+      "id": 11,
+      "nom": "Oracle",
+      "logo_url": "\\icons\\competences\\sql.png"
+    },
+    {
+      "id": 12,
+      "nom": "PostgreSQL",
+      "logo_url": "\\icons\\competences\\postgresql.png"
+    }
+  ]
+}

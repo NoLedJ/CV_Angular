@@ -1,1 +1,142 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Novecentosanswide-DemiBold";
+  src:
+    url("/fonts/Novecentosanswide-DemiBold.otf")
+}
+
+@font-face {
+  font-family: "Garet-Book";
+  src:
+    url("/fonts/Garet-Book.otf")
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #C0C0C0;
+  font-family: "Garet-Book";
+  font-size: 0.83em;
+  height: 100%;
+  color: #000;
+  width: 100%;
+  margin: 0;
+  scrollbar-color: var(--tertiary-color) transparent;
+
+  --primary-color: #f9fbf1;
+  --secondary-color: #000;
+  --tertiary-color: #b7bf96;
+  --alert-color: #d82b2b;
+  --dark-grey: #9e9e9e;
+  --light-grey: #cacaca;
+}
+
+section {
+  height: 100%;
+  padding: 0 20px 30px 20px;
+  margin: 0 20px;
+  border-radius: 20px 20px 0 0;
+  &:nth-child(odd) {
+    background: var(--primary-color);
+  }
+  &:nth-child(even) {
+    background: hsl(var(--secondary-color));
+  }
+}
+
+h1 {
+  font-family: "Novecentosanswide-DemiBold";
+  font-size: 1.5em;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Garet-Book";
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 0.8em;
+  margin: 0;
+}
+
+h3 {
+    font-family: "Novecentosanswide-DemiBold";
+    margin: 0;
+    font-size: 1em;
+}
+
+h4 {
+  font-family: "Novecentosanswide-DemiBold";
+  font-size: 1.2em;
+  text-decoration: underline;
+  margin-top: 0;
+  text-align: center;
+  &:active {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+h5 {
+  font-size: 1em;
+  text-align: center;
+}
+
+a:link {
+  color: #42b0f5;
+}
+
+a:visited {
+  color: #d442f5;
+}
+
+a:active {
+  color: #d442f5;
+}
+
+.bouton-valider {
+  margin-top: 5px;
+  padding: 0 20px;
+  height: 30px;
+  width: fit-content;
+  border: 1px solid #86da00d5;
+  border-radius: 15px;
+  background: #e5ffbd;
+  color: #65A600;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: inset -1px -1px 8px #86da00d5, 1px 1px 2px #86da00d5;
+  &:hover {
+    box-shadow: inset -1px -1px 4px #86da00d5;
+    background: #e5ffbd;
+  }
+  &:active {
+    box-shadow: none;
+    background: #e5ffbd;
+  }
+}
+
+button:disabled {
+  color: var(--dark-grey);
+  background: var(--light-grey);
+  border: 1px solid var(--dark-grey);
+  box-shadow: none;
+  &:hover {
+    background: var(--light-grey);
+  }
+}
+
+@media (min-width: 480px) {
+   h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 0 50px 30px 50px;
+  }
+}
