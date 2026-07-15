@@ -1,6 +1,6 @@
 # CvAngular
 
-Open your browser and navigate to https://borisclaude.eu to browse the project on production.
+Open your browser and navigate to https://borisclaude.eu to browse the project on production. 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
 
 ## Development server
