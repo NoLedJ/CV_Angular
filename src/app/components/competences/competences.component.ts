@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { TitreSectionComponent } from '../shared/titre-section/titre-section.component';
 import import_competences_json from '../competences/competences.json';
 import { Competences } from './competences.interface';
+import { TitreSectionComponent } from '../../shared/titre-section/titre-section.component';
 
 @Component({
   standalone: true,

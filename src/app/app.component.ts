@@ -1,19 +1,19 @@
-import import_experiences_json from "./experiences/experiences.json";
+import import_experiences_json from "./components/experiences/experiences.json";
 import { Component, model, OnInit } from '@angular/core';
-import { IntroComponent } from './intro/intro.component';
-import { CompetencesComponent } from './competences/competences.component';
-import { ExperiencesComponent } from './experiences/experiences.component';
+import { ExperiencesComponent } from './components/experiences/experiences.component';
 import {
   trigger,
   style,
   animate,
   transition
 } from '@angular/animations';
-import { DiversComponent } from './divers/divers.component';
-import { ModalExperienceComponent } from "./modales/modal-experience/modal-experience.component";
-import { MentionsLegalesComponent } from './modales/mentions-legales/mentions-legales.component';
-import { Experience } from "./experiences/experience.interface";
+import { MentionsLegalesComponent } from './components/mentions-legales/mentions-legales.component';
+import { Experience } from "./components/experiences/experience.interface";
 import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
+import { CompetencesComponent } from "./components/competences/competences.component";
+import { DiversComponent } from "./components/divers/divers.component";
+import { ModalExperienceComponent } from "./components/experiences/modal-experience/modal-experience.component";
+import { IntroComponent } from "./components/intro/intro.component";
 
 @Component({
   selector: 'app-root',

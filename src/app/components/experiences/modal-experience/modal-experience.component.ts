@@ -1,8 +1,8 @@
-import import_experiences_json from "../../experiences/experiences.json";
+import import_experiences_json from "../../../components/experiences/experiences.json";
 import { Component, effect, ElementRef, model, ViewChild } from '@angular/core';
-import { Experience } from "../../experiences/experience.interface";
 import { SafeResourceUrl } from "@angular/platform-browser";
-import { SafeHtmlPipe } from "../../pipes/safeHtml.pipe";
+import { SafeHtmlPipe } from "../../../pipes/safeHtml.pipe";
+import { Experience } from "../experience.interface";
 
 @Component({
   selector: 'app-modal-experience',
@@ -34,7 +34,7 @@ export class ModalExperienceComponent {
   timeoutLoading() {
     setTimeout(() => {
       if (this.loading) this.loading = false;
-    }, 1200);
+    }, 1000);
   }
 
   changerExperience(x: number, event: Event) {

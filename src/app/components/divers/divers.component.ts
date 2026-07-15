@@ -1,9 +1,9 @@
 import { Component, inject, model } from '@angular/core';
-import { TitreSectionComponent } from '../shared/titre-section/titre-section.component';
 import { FormGroup, FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 import import_divers_json from '../divers/divers.json';
 import { DiversService } from './divers.service';
 import { ContactForm, Divers } from './divers.interface';
+import { TitreSectionComponent } from '../../shared/titre-section/titre-section.component';
 
 @Component({
   standalone: true,

@@ -1,6 +1,6 @@
-import import_experiences_json from "../experiences/experiences.json";
+import import_experiences_json from "./experiences.json";
 import { Component, model } from '@angular/core';
-import { TitreSectionComponent } from '../shared/titre-section/titre-section.component';
+import { TitreSectionComponent } from '../../shared/titre-section/titre-section.component';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { CarteExperienceComponent } from './carte-experience/carte-experience.component';
 import { Experience } from './experience.interface';
