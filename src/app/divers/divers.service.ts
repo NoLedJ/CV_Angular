@@ -9,7 +9,7 @@ import { environment } from '../../environments/environment';
 })
 export class DiversService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private readonly http: HttpClient) { }
 
   envoyerMessage(body: Partial<ContactFormValue>) {
     let headers = {

@@ -17,6 +17,7 @@ export class ModalExperienceComponent {
 
   experience: Partial<Experience> = {};
   photo_url = "";
+  loading = true;
 
   experiences_texte = model<Experience[]>([]);
   youtubeVideosArray = model<SafeResourceUrl[]>([]);
@@ -27,6 +28,13 @@ export class ModalExperienceComponent {
     effect(() => {
       this.experience = import_experiences_json[(this.experienceId() - 1)];
     });
+    effect(() => this.timeoutLoading());
+  }
+
+  timeoutLoading() {
+    setTimeout(() => {
+      if (this.loading) this.loading = false;
+    }, 1200);
   }
 
   changerExperience(x: number, event: Event) {
@@ -34,6 +42,12 @@ export class ModalExperienceComponent {
     this.experienceId.set(this.experienceId() + x);
     const el = this.modalContent?.nativeElement;
     if (el) el.scrollTo({ top: 0, behavior: 'instant' });
+    this.loading = true;
+    this.timeoutLoading();
+  }
+
+  enChargement() {
+    this.loading = false;
   }
 
 }

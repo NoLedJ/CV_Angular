@@ -1,5 +1,5 @@
 import import_experiences_json from "./experiences/experiences.json";
-import { Component, model } from '@angular/core';
+import { Component, model, OnInit } from '@angular/core';
 import { IntroComponent } from './intro/intro.component';
 import { CompetencesComponent } from './competences/competences.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
@@ -36,6 +36,14 @@ import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
         style({
           translate: '0 -300px'
         }),
+        animate('2s ease-out', style({ translate: '0'}))
+      ])
+    ]),
+    trigger('openMainDebut', [
+      transition(':enter', [
+        style({
+          translate: '0 100dvh'
+        }),
         animate('1.5s ease-out', style({ translate: '0'}))
       ])
     ])
@@ -43,7 +51,9 @@ import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+
+  loading = true;
 
   description = false;
   experiences_texte = model<Experience[]>(import_experiences_json);
@@ -55,6 +65,12 @@ export class AppComponent {
 
   constructor(private readonly sanitizer: DomSanitizer) {
     this.youtubeVideosArray.set(import_experiences_json.map((exp: Experience) => this.sanitizer.bypassSecurityTrustResourceUrl(exp.contexte.video)));
+  }
+
+  ngOnInit() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1200);
   }
 
   fermerModal(event: Event) {

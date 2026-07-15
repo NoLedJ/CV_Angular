@@ -11,6 +11,31 @@
   left: 0;
 }
 
+.app-container {
+  position: relative;
+}
+
+.skeleton-loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+.text-loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  font-family: "Novecentosanswide-DemiBold";
+  font-size: 2em;
+  margin: auto;
+  color: var(--dark-grey);
+  text-shadow:
+    1px 1px 0 var(--light-grey),
+    -1px -1px 0 var(--tertiary-color);
+}
+
 header {
   width: 100%;
   position: fixed;
@@ -26,7 +51,7 @@ header {
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 110px;
+  top: 130px;
   flex-direction: column;
   background: #C0C0C0;
 }

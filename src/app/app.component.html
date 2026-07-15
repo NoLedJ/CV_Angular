@@ -14,17 +14,30 @@
     }
   </div>
 }
-
-<app-intro [@openIntroDebut]></app-intro>
-<main>
-  <div class="content">
-    <app-competences></app-competences>
-    <app-experiences
-      [(experienceSelectionnee)]="experienceSelectionnee"
-      [(afficherModalExperience)]="afficherModalExperience">
-    </app-experiences>
-    <app-divers
-      [(afficherMentionsLegales)]="afficherMentionsLegales">
-    </app-divers>
+<div class="app-container">
+  <p class="text-loader">borisclaude.eu</p>
+  @if (loading) {
+  <div class="skeleton-loader">
+    <div class="loader-container">
+        <div class="loader"></div>
+      </div>
   </div>
-</main>
+  } @else {
+    <app-intro [@openIntroDebut]></app-intro>
+    <main [@openMainDebut]>
+      <div class="content">
+        <app-competences></app-competences>
+        <app-experiences
+          [(experienceSelectionnee)]="experienceSelectionnee"
+          [(afficherModalExperience)]="afficherModalExperience">
+        </app-experiences>
+        <app-divers
+          [(afficherMentionsLegales)]="afficherMentionsLegales">
+        </app-divers>
+      </div>
+    </main>
+  }
+</div>
+
+
+

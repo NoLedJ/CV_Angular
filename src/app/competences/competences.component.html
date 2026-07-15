@@ -1,7 +1,7 @@
 <section>
   <app-titre-section [titre]="'Informations générales'"></app-titre-section>
   <div class="content" #content>
-    <div class="card">
+    <div class="card fly-card">
       <h4>Compétences générales</h4>
       <ul class="comp-gen">
         @for (comp_gen of competences.competences_generales; track comp_gen.id) {
@@ -19,7 +19,7 @@
         }
       </ul>
     </div>
-    <div class="card">
+    <div class="card fly-card">
       <h4>Formations et certifications</h4>
       <ul>
         @for (form of competences.formations; track form.id) {
@@ -30,7 +30,7 @@
         }
       </ul>
     </div>
-    <div class="card">
+    <div class="card fly-card">
       <h4>Compétences techniques</h4>
       <div class="comp-tech">
         @for (comp_tech of competences.competences_techniques; track comp_tech.id) {

@@ -30,7 +30,23 @@
         </div>
       <h5>Présentation</h5>
       <div class="video-container">
-        <iframe class="iframe-video" [src]="youtubeVideosArray()[experienceId()-1]" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        @if (loading) {
+          <div class="skeleton-loader">
+            <div class="loader-container">
+                <div class="loader"></div>
+              </div>
+          </div>
+          } @else {
+            <iframe
+              class="iframe-video"
+              [src]="youtubeVideosArray()[experienceId()-1]"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              loading="lazy"
+              (load)="enChargement()"></iframe>
+          }
       </div>
       <h5>Constitution des équipes</h5>
       @for (equipe of experience.contexte?.equipes; track equipe.id) {
