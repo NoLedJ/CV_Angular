@@ -92,62 +92,62 @@
     {
       "id": 1,
       "nom": "Angular",
-      "logo_url": "\\icons\\competences\\angular.png"
+      "logo_url": "\\icons\\competences\\angular.webp"
     },
     {
       "id": 2,
       "nom": "RxJS",
-      "logo_url": "\\icons\\competences\\rxjs.png"
+      "logo_url": "\\icons\\competences\\rxjs.webp"
     },
     {
       "id": 3,
       "nom": "Signal",
-      "logo_url": "\\icons\\competences\\signal.png"
+      "logo_url": "\\icons\\competences\\signal.webp"
     },
     {
       "id": 4,
       "nom": "TypeScript",
-      "logo_url": "\\icons\\competences\\typescript.png"
+      "logo_url": "\\icons\\competences\\typescript.webp"
     },
     {
       "id": 5,
       "nom": "JavaScript",
-      "logo_url": "\\icons\\competences\\javascript.png"
+      "logo_url": "\\icons\\competences\\javascript.webp"
     },
     {
       "id": 6,
       "nom": "HTML5",
-      "logo_url": "\\icons\\competences\\html5.png"
+      "logo_url": "\\icons\\competences\\html5.webp"
     },
     {
       "id": 7,
       "nom": "CSS3",
-      "logo_url": "\\icons\\competences\\css3.png"
+      "logo_url": "\\icons\\competences\\css3.webp"
     },
     {
       "id": 8,
       "nom": "Java",
-      "logo_url": "\\icons\\competences\\java.png"
+      "logo_url": "\\icons\\competences\\java.webp"
     },
     {
       "id": 9,
       "nom": "Spring",
-      "logo_url": "\\icons\\competences\\spring.png"
+      "logo_url": "\\icons\\competences\\spring.webp"
     },
     {
       "id": 10,
       "nom": "Maven",
-      "logo_url": "\\icons\\competences\\maven.png"
+      "logo_url": "\\icons\\competences\\maven.webp"
     },
     {
       "id": 11,
       "nom": "Oracle",
-      "logo_url": "\\icons\\competences\\sql.png"
+      "logo_url": "\\icons\\competences\\sql.webp"
     },
     {
       "id": 12,
       "nom": "PostgreSQL",
-      "logo_url": "\\icons\\competences\\postgresql.png"
+      "logo_url": "\\icons\\competences\\postgresql.webp"
     }
   ]
 }
